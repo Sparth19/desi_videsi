@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 
+
 class MainPage extends StatefulWidget {
   @override
   _MainPageState createState() => _MainPageState();
@@ -14,23 +15,35 @@ class _MainPageState extends State<MainPage> {
   @override
 
 
-  List<FetchData> useData = new List<FetchData>();
-  List<FetchData> _UseList = new List<FetchData>();
+  List _useData=new List();
+  List _useMaster=new List();
+
 
   Future LoadData() async {
-    Services.getDetails(http.Client()).then((Data) {
+    loadCountry().then((Data) {
       setState(() {
-        useData.addAll(Data);
-        _UseList = useData;
+       _useData=Data;
+       print(_useData[1].country);
+        //_UseList = useData;
         // print("p" + _UseList.length.toString());
       });
     });
+    loadMaster().then((Data1) {
+      setState(() {
+        _useMaster=Data1;
+        print(_useMaster[1].company);
+        //_UseList = useData;
+        // print("p" + _UseList.length.toString());
+      });
+    });
+
   }
 
   @override
   void initState() {
     super.initState();
     LoadData();
+   // loadCountry();
   }
 
   Widget build(BuildContext context) {
@@ -42,7 +55,7 @@ class _MainPageState extends State<MainPage> {
     ),
       body: new ListView.builder(
         padding: EdgeInsets.fromLTRB(8, 8, 8, 8),
-        itemCount: _UseList.length,
+        itemCount: _useMaster.length,
         itemBuilder: (BuildContext context, int index) {
           return Card(
               elevation: 5,
@@ -61,7 +74,7 @@ class _MainPageState extends State<MainPage> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                        Text("Data here")
+                        Text(_useMaster[index].company),
                       /*_courceInfo(_UseList[index], _decorationContainerA(),
                           background: LightColor.lightOrange)*/
                     ],
