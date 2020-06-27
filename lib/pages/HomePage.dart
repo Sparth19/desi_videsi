@@ -1,7 +1,8 @@
+import 'package:auto_size_text/auto_size_text.dart';
+import 'package:desividesi/color/MyTheme.dart';
 import 'package:desividesi/service/services.dart';
 import 'package:desividesi/storage/mobile_storage.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:desividesi/color/light_color.dart';
 import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
 
@@ -55,6 +56,8 @@ class _HomepageState extends State<Homepage> {
     {'c_name': 'USA', 'c_url': 'images/usa_flag.jpg'}
   ];
 
+  get editingController => null;
+
   Future LoadData() async {
     loadCountry().then((Data) {
       setState(() {
@@ -81,65 +84,144 @@ class _HomepageState extends State<Homepage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Container(
-          height: 150,
-          decoration: BoxDecoration(
-            color: Color(0x8090ee90),
-            borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(35),
-                bottomRight: Radius.circular(35)),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          height: 5.2 * MediaQuery.of(context).size.width / 5,
+          child: Stack(
             children: <Widget>[
-              SizedBox(height: 40),
-              Row(
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(16.0,16,16,5),
-                    child: Text(
-                      "Swadesi",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 28,color: LightColor.lightBlue),
+              Container(
+                height: 4 * MediaQuery.of(context).size.width / 5,
+                alignment: Alignment.center,
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  color: MyThemeColor.primaryColor,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: Offset(0.0, 1.0), //(x,y)
+                      blurRadius: 6.0,
                     ),
-                  ),
-                  //butoon goes here
-                ],
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16.0, 0, 16.0, 0),
-                child: Text(
-                  "#vocalforlocal",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                  ],
+                  borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(20),
+                      bottomRight: Radius.circular(20)),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[],
                 ),
               ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                textDirection: TextDirection.ltr,
+                children: <Widget>[
+                  SizedBox(height: 40),
+                  Row(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(16.0, 16, 16, 5),
+                        child: Text(
+                          "Swadesi",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 28,
+                              color: MyThemeColor.primaryTextColor),
+                        ),
+                      ),
+                      //butoon goes here
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16.0, 0, 16.0, 0),
+                    child: Text(
+                      "#vocalforlocal",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(20),
+                    child: TextField(
+                        onChanged: (value) {},
+                        controller: editingController,
+                        cursorColor: MyThemeColor.secondaryColor,
+                        decoration: InputDecoration(
+//                        labelText: "Search",
+                          hintText: "Search",
+                          prefixIcon: Icon(Icons.search),
+                          fillColor: Colors.white,
+                          filled: true,
+                          border: InputBorder.none,
+                        )),
+                  ),
+                ],
+              ),
+              Container(
+                margin: EdgeInsets.only(
+                    top: 2.5 * MediaQuery.of(context).size.width / 5),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(16.0, 5, 5, 5),
+                      child: Text(
+                        "Categories".toUpperCase(),
+                        style: TextStyle(
+                            fontFamily: 'RobotoMono',
+                            fontSize: 16,
+                            letterSpacing: 1,
+                            color: MyThemeColor.secondaryDarkColor,
+                            fontWeight: FontWeight.w700),
+                      ),
+                    ),
+                    Container(
+                      height: 190,
+                      child: category_list(),
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ),
-        SizedBox(height: 10,),
         Padding(
-          padding: const EdgeInsets.fromLTRB(16.0,5,5,5),
-          child: Text("Categories",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: LightColor.lightBlue),),
+          padding: const EdgeInsets.fromLTRB(20.0, 5, 5, 5),
+          child: Text(
+            "Country".toUpperCase(),
+            style: TextStyle(
+                fontFamily: 'RobotoMono',
+                fontSize: 16,
+                letterSpacing: 1,
+                color: MyThemeColor.secondaryDarkColor,
+                fontWeight: FontWeight.w700),
+          ),
         ),
-        Container(
-          height: 190,
-          child: category_list(),
+        Expanded(
+          child: Container(
+            alignment: Alignment.bottomLeft,
+            height: MediaQuery.of(context).size.height,
+            child: country_list(),
+          ),
         ),
-
-        SizedBox(height: 10,),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(16.0,5,5,5),
-          child: Text("Categories",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: LightColor.lightBlue),),
-        ),
-        Container(
-          height: 190,
-          child: category_list(),
-        ),
-
-
-
-
       ],
     ));
+  }
+
+  Widget country_list() {
+    return new ListView.builder(
+        padding: EdgeInsets.fromLTRB(8, 8, 8, 8),
+        itemCount: country_a.length,
+        scrollDirection: Axis.vertical,
+        itemBuilder: (BuildContext context, int index) {
+          return Container(
+              height: 80,
+              alignment: Alignment.centerLeft,
+              margin: const EdgeInsets.all(5.0),
+              child: Stack(
+                children: <Widget>[
+                  c_name_card(index),
+                  c_image_card(index),
+                ],
+              ));
+        });
   }
 
   Widget category_list() {
@@ -167,7 +249,7 @@ class _HomepageState extends State<Homepage> {
       margin: const EdgeInsets.only(top: 20.0),
       width: MediaQuery.of(context).size.width / 2 - 25,
       child: Card(
-          color: LightColor.seeBlue,
+          color: MyThemeColor.secondaryColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12.0),
           ),
@@ -175,14 +257,19 @@ class _HomepageState extends State<Homepage> {
           child: Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
+              padding:
+                  const EdgeInsets.only(bottom: 12.0, left: 8.0, right: 8.0),
+              child: AutoSizeText(
                 category_a[index]["mc_name"],
+                maxLines: 2,
+                textAlign: TextAlign.justify,
+                overflow: TextOverflow.ellipsis,
                 style: TextStyle(
                     fontFamily: 'RobotoMono',
-                    fontSize: 16,
-                    color: LightColor.lightBlue,
-                    fontWeight: FontWeight.w500),
+                    fontSize: 14,
+                    letterSpacing: 1,
+                    color: MyThemeColor.textWhite,
+                    fontWeight: FontWeight.w600),
               ),
             ),
           )),
@@ -202,17 +289,76 @@ class _HomepageState extends State<Homepage> {
           elevation: 5,
           child: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: showImage(index),
+            child: showImage("images/" + category_a[index]["mc_url"] + ".jpg"),
           ),
         ),
       ),
     );
   }
 
-  Widget showImage(int index) {
+  Widget c_name_card(int index) {
+    return Container(
+      margin: EdgeInsets.only(bottom: 5),
+      padding: EdgeInsets.fromLTRB(25, 0, 0, 0),
+      width: MediaQuery.of(context).size.width,
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              MyThemeColor.secondaryDarkColor,
+              MyThemeColor.secondaryColor,
+              MyThemeColor.secondaryLightColor
+            ],
+            begin: Alignment.centerLeft,
+            end: Alignment.centerRight,
+          ),
+          borderRadius: BorderRadius.circular(30.0)),
+      child: Align(
+        alignment: Alignment.centerLeft,
+        child: Text(
+          country_a[index]["c_name"],
+          textAlign: TextAlign.justify,
+          style: TextStyle(
+            fontFamily: 'Raleway',
+            fontSize: 20,
+            letterSpacing: 2,
+            color: MyThemeColor.textWhite,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget c_image_card(int index) {
+    return Align(
+        alignment: Alignment.centerRight,
+        child: FractionallySizedBox(
+          widthFactor: 0.2,
+          heightFactor: 1,
+          child: Container(
+            margin: EdgeInsets.only(bottom: 5.0, top: 0.0),
+            /* decoration: BoxDecoration(
+              color: MyThemeColor.primaryColor,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey,
+                  offset: Offset(0.0, 1.0), //(x,y)
+                  blurRadius: 6.0,
+                ),
+              ],
+              borderRadius: BorderRadius.all(Radius.circular(30)),
+            ),*/
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(30.0),
+              child: showImage(country_a[index]["c_url"]),
+            ),
+          ),
+        ));
+  }
+
+  Widget showImage(String index) {
     return FutureBuilder(
-      future:
-          _getImage(context, "images/" + category_a[index]["mc_url"] + ".jpg"),
+      future: _getImage(context, index),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done)
           return Container(
@@ -221,9 +367,9 @@ class _HomepageState extends State<Homepage> {
             child: snapshot.data,
           );
 
-      /*  if (snapshot.connectionState == ConnectionState.waiting)
+        if (snapshot.connectionState == ConnectionState.waiting)
           return Container(
-              height: 100, width: 100, child: CircularProgressIndicator());*/
+              height: 50, width: 50, child: CircularProgressIndicator());
 
         return Container();
       },
@@ -237,7 +383,7 @@ class _HomepageState extends State<Homepage> {
       fm = FadeInImage.memoryNetwork(
         placeholder: kTransparentImage,
         image: downloadUrl.toString(),
-        fit: BoxFit.scaleDown,
+        fit: BoxFit.cover,
       );
     });
     return fm;

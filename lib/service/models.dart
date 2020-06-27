@@ -25,14 +25,11 @@ class country_model {
   }
 }
 
-// To parse this JSON data, do
-//
-//     final welcome = welcomeFromJson(jsonString);
+List<Welcome> welcomeFromJson(String str) =>
+    List<Welcome>.from(json.decode(str).map((x) => Welcome.fromJson(x)));
 
-
-List<Welcome> welcomeFromJson(String str) => List<Welcome>.from(json.decode(str).map((x) => Welcome.fromJson(x)));
-
-String welcomeToJson(List<Welcome> data) => json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
+String welcomeToJson(List<Welcome> data) =>
+    json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class Welcome {
   Welcome({
@@ -48,26 +45,28 @@ class Welcome {
   String companyPic;
 
   factory Welcome.fromJson(Map<String, dynamic> json) => Welcome(
-    country: json["Country"],
-    company: json["Company"],
-    countryPic: json["Country Pic"],
-    companyPic: json["Company Pic"],
-  );
+        country: json["Country"],
+        company: json["Company"],
+        countryPic: json["Country Pic"],
+        companyPic: json["Company Pic"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "Country": country,
-    "Company": company,
-    "Country Pic": countryPic,
-    "Company Pic": companyPic,
-  };
+        "Country": country,
+        "Company": company,
+        "Country Pic": countryPic,
+        "Company Pic": companyPic,
+      };
 }
 // To parse this JSON data, do
 //
 //     final masterData = masterDataFromJson(jsonString);
 
-List<MasterData> masterDataFromJson(String str) => List<MasterData>.from(json.decode(str).map((x) => MasterData.fromJson(x)));
+List<MasterData> masterDataFromJson(String str) =>
+    List<MasterData>.from(json.decode(str).map((x) => MasterData.fromJson(x)));
 
-String masterDataToJson(List<MasterData> data) => json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
+String masterDataToJson(List<MasterData> data) =>
+    json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class MasterData {
   MasterData({
@@ -107,45 +106,70 @@ class MasterData {
   String companyPic;
 
   factory MasterData.fromJson(Map<String, dynamic> json) => MasterData(
-    id: json["id"],
-    mainCategory: mainCategoryValues.map[json["Main Category"]],
-    category1: json["Category 1"],
-    category2: json["Category 2"],
-    brandName: json["Brand Name"],
-    company: json["Company"],
-    madeIn: madeInValues.map[json["Made in"]],
-    shareholding: json["Shareholding"],
-    country: countryValues.map[json["Country"]],
-    rank: json["rank"],
-    brandPics: json["BRAND PICS"],
-    countryPic: countryPicValues.map[json["Country Pic"]],
-    mainCategoryPics: mainCategoryPicsValues.map[json["Main Category pics"]],
-    category1Pics: json["CATEGORY 1 PICS"],
-    category2Pics: json["CATEGORY 2 PICS"],
-    companyPic: json["Company Pic"],
-  );
+        id: json["id"],
+        mainCategory: mainCategoryValues.map[json["Main Category"]],
+        category1: json["Category 1"],
+        category2: json["Category 2"],
+        brandName: json["Brand Name"],
+        company: json["Company"],
+        madeIn: madeInValues.map[json["Made in"]],
+        shareholding: json["Shareholding"],
+        country: countryValues.map[json["Country"]],
+        rank: json["rank"],
+        brandPics: json["BRAND PICS"],
+        countryPic: countryPicValues.map[json["Country Pic"]],
+        mainCategoryPics:
+            mainCategoryPicsValues.map[json["Main Category pics"]],
+        category1Pics: json["CATEGORY 1 PICS"],
+        category2Pics: json["CATEGORY 2 PICS"],
+        companyPic: json["Company Pic"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "id": id,
-    "Main Category": mainCategoryValues.reverse[mainCategory],
-    "Category 1": category1,
-    "Category 2": category2,
-    "Brand Name": brandName,
-    "Company": company,
-    "Made in": madeInValues.reverse[madeIn],
-    "Shareholding": shareholding,
-    "Country": countryValues.reverse[country],
-    "rank": rank,
-    "BRAND PICS": brandPics,
-    "Country Pic": countryPicValues.reverse[countryPic],
-    "Main Category pics": mainCategoryPicsValues.reverse[mainCategoryPics],
-    "CATEGORY 1 PICS": category1Pics,
-    "CATEGORY 2 PICS": category2Pics,
-    "Company Pic": companyPic,
-  };
+        "id": id,
+        "Main Category": mainCategoryValues.reverse[mainCategory],
+        "Category 1": category1,
+        "Category 2": category2,
+        "Brand Name": brandName,
+        "Company": company,
+        "Made in": madeInValues.reverse[madeIn],
+        "Shareholding": shareholding,
+        "Country": countryValues.reverse[country],
+        "rank": rank,
+        "BRAND PICS": brandPics,
+        "Country Pic": countryPicValues.reverse[countryPic],
+        "Main Category pics": mainCategoryPicsValues.reverse[mainCategoryPics],
+        "CATEGORY 1 PICS": category1Pics,
+        "CATEGORY 2 PICS": category2Pics,
+        "Company Pic": companyPic,
+      };
 }
 
-enum Country { INDIA, FRANCE, GERMANY, ITALY, USA, JAPAN, SOUTH_KOREA, CHINA, UK, NETHERLANDS, SPAIN, TAIWAN, SWEDEN, INDIA_AUSTRIA, SWITZERLAND, AUSTRIA, DENMARK, HONG_KONG, CANADA, FINLAND, UAE, SRI_LANKA, SINGAPORE }
+enum Country {
+  INDIA,
+  FRANCE,
+  GERMANY,
+  ITALY,
+  USA,
+  JAPAN,
+  SOUTH_KOREA,
+  CHINA,
+  UK,
+  NETHERLANDS,
+  SPAIN,
+  TAIWAN,
+  SWEDEN,
+  INDIA_AUSTRIA,
+  SWITZERLAND,
+  AUSTRIA,
+  DENMARK,
+  HONG_KONG,
+  CANADA,
+  FINLAND,
+  UAE,
+  SRI_LANKA,
+  SINGAPORE
+}
 
 final countryValues = EnumValues({
   "Austria": Country.AUSTRIA,
@@ -173,7 +197,31 @@ final countryValues = EnumValues({
   "USA": Country.USA
 });
 
-enum CountryPic { INDIA_FLAG, FRANCE_FLAG, GERMANY_FLAG, ITALY_FLAG, USA_FLAG, JAPAN_FLAG, SOUTH_KOREA_FLAG, CHINA_FLAG, UK_FLAG, NETHERLANDS_FLAG, SPAIN_FLAG, TAIWAN_FLAG, SWEDEN_FLAG, WORLD_FLAG, SWITZERLAND_FLAG, AUSTRIA_FLAG, DENMARK_FLAG, HONG_KONG_FLAG, CANADA_FLAG, FINLAND_FLAG, UAE_FLAG, SRI_LANKA_FLAG, SINGAPORE_FLAG }
+enum CountryPic {
+  INDIA_FLAG,
+  FRANCE_FLAG,
+  GERMANY_FLAG,
+  ITALY_FLAG,
+  USA_FLAG,
+  JAPAN_FLAG,
+  SOUTH_KOREA_FLAG,
+  CHINA_FLAG,
+  UK_FLAG,
+  NETHERLANDS_FLAG,
+  SPAIN_FLAG,
+  TAIWAN_FLAG,
+  SWEDEN_FLAG,
+  WORLD_FLAG,
+  SWITZERLAND_FLAG,
+  AUSTRIA_FLAG,
+  DENMARK_FLAG,
+  HONG_KONG_FLAG,
+  CANADA_FLAG,
+  FINLAND_FLAG,
+  UAE_FLAG,
+  SRI_LANKA_FLAG,
+  SINGAPORE_FLAG
+}
 
 final countryPicValues = EnumValues({
   "austria_flag": CountryPic.AUSTRIA_FLAG,
@@ -201,7 +249,22 @@ final countryPicValues = EnumValues({
   "world_flag": CountryPic.WORLD_FLAG
 });
 
-enum MadeIn { EMPTY, INDIA, CHINA, GERMANY, ITALY, MULTIPLE_COUNTRIES, AUSTRALIA, SWITZERLAND, KOREA, FRANCE, UK, IRELAND, AUSTRIA, SPAIN }
+enum MadeIn {
+  EMPTY,
+  INDIA,
+  CHINA,
+  GERMANY,
+  ITALY,
+  MULTIPLE_COUNTRIES,
+  AUSTRALIA,
+  SWITZERLAND,
+  KOREA,
+  FRANCE,
+  UK,
+  IRELAND,
+  AUSTRIA,
+  SPAIN
+}
 
 final madeInValues = EnumValues({
   "Australia": MadeIn.AUSTRALIA,
@@ -220,7 +283,20 @@ final madeInValues = EnumValues({
   "UK": MadeIn.UK
 });
 
-enum MainCategory { AUTOMOBILES, BABY_PRODUCTS, BAKERY_SNACKS, BEAUTY_HYGIENE, CLEANING_HOUSEHOLD, DAIRY_ICE_CREAMS, DRINKS_BEVERAGES, ELECTRONICS, FASHION, FOODGRAINS_OIL_MASALA, FROZEN_FOODS, HEALTH_DRINKS_SUPPLEMENTS }
+enum MainCategory {
+  AUTOMOBILES,
+  BABY_PRODUCTS,
+  BAKERY_SNACKS,
+  BEAUTY_HYGIENE,
+  CLEANING_HOUSEHOLD,
+  DAIRY_ICE_CREAMS,
+  DRINKS_BEVERAGES,
+  ELECTRONICS,
+  FASHION,
+  FOODGRAINS_OIL_MASALA,
+  FROZEN_FOODS,
+  HEALTH_DRINKS_SUPPLEMENTS
+}
 
 final mainCategoryValues = EnumValues({
   "Automobiles": MainCategory.AUTOMOBILES,
@@ -237,7 +313,20 @@ final mainCategoryValues = EnumValues({
   "Health Drinks & Supplements": MainCategory.HEALTH_DRINKS_SUPPLEMENTS
 });
 
-enum MainCategoryPics { AUTOMOBILES, BABY_PRODUCTS, BAKERY_SNACKS, BEAUTY_HYGIENE, CLEANING_HOUSEHOLD, DAIRY_ICECREAMS, BEVERAGES, ELECTRONICS, FASHION, FOODGRAINS_OIL_MASALA, FROZEN_FOOD, HEALTH_SUPPLEMENTS }
+enum MainCategoryPics {
+  AUTOMOBILES,
+  BABY_PRODUCTS,
+  BAKERY_SNACKS,
+  BEAUTY_HYGIENE,
+  CLEANING_HOUSEHOLD,
+  DAIRY_ICECREAMS,
+  BEVERAGES,
+  ELECTRONICS,
+  FASHION,
+  FOODGRAINS_OIL_MASALA,
+  FROZEN_FOOD,
+  HEALTH_SUPPLEMENTS
+}
 
 final mainCategoryPicsValues = EnumValues({
   "automobiles": MainCategoryPics.AUTOMOBILES,
@@ -288,7 +377,6 @@ class countrylist {
 }
 */
 
-
 class master_model {
   int id;
   String mainCategory;
@@ -309,21 +397,21 @@ class master_model {
 
   master_model(
       {this.id,
-        this.mainCategory,
-        this.category1,
-        this.category2,
-        this.brandName,
-        this.company,
-        this.madeIn,
-        this.shareholding,
-        this.country,
-        this.rank,
-        this.bRANDPICS,
-        this.countryPic,
-        this.mainCategoryPics,
-        this.cATEGORY1PICS,
-        this.cATEGORY2PICS,
-        this.companyPic});
+      this.mainCategory,
+      this.category1,
+      this.category2,
+      this.brandName,
+      this.company,
+      this.madeIn,
+      this.shareholding,
+      this.country,
+      this.rank,
+      this.bRANDPICS,
+      this.countryPic,
+      this.mainCategoryPics,
+      this.cATEGORY1PICS,
+      this.cATEGORY2PICS,
+      this.companyPic});
 
   master_model.fromJson(Map<String, dynamic> json) {
     id = json['id'];
