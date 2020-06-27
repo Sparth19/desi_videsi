@@ -1,53 +1,18 @@
-import 'package:desividesi/color/light_color.dart';
-import 'package:desividesi/service/models.dart';
 import 'package:desividesi/service/services.dart';
 import 'package:desividesi/storage/mobile_storage.dart';
 import 'package:flutter/cupertino.dart';
-
+import 'package:desividesi/color/light_color.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 
-class MainPage extends StatefulWidget {
+class Homepage extends StatefulWidget {
   @override
-  _MainPageState createState() => _MainPageState();
+  _HomepageState createState() => _HomepageState();
 }
 
-
-//for(var i=0;i<10;i++)
-/*array([['Austria', 'austria_flag'],
-['Canada', 'canada_flag'],
-['China', 'china_flag'],
-['Denmark', 'denmark_flag'],
-['Finland', 'finland_flag'],
-['France', 'france_flag'],
-['Germany', 'germany_flag'],
-['Hong Kong', 'hong_kong_flag'],
-['India', 'india_flag'],
-['India & Austria', 'world_flag'],
-['Italy', 'italy_flag'],
-['Japan', 'japan_flag'],
-['Netherlands', 'netherlands_flag'],
-['Singapore', 'singapore_flag'],
-['South Korea', 'south_korea_flag'],
-['Spain', 'spain_flag'],
-['Sri Lanka', 'sri_lanka_flag'],
-['Sweden', 'sweden_flag'],
-['Switzerland', 'switzerland_flag'],
-['Taiwan', 'taiwan_flag'],
-['UAE', 'uae_flag'],
-['UK', 'uk_flag'],
-['USA', 'usa_flag']], dtype=object);*/
-
-class _MainPageState extends State<MainPage> {
-  @override
+class _HomepageState extends State<Homepage> {
   List _useData = new List();
   List _useMaster = new List();
 
-/*
-  country_list_making(){
-    country_array.add(new Map());
-  }
-*/
   List<Map<String, String>> category_a = [
     {'mc_name': 'Automobiles', 'mc_url': 'automobiles'},
     {'mc_name': 'Baby Products', 'mc_url': 'baby_products'},
@@ -93,17 +58,11 @@ class _MainPageState extends State<MainPage> {
     loadCountry().then((Data) {
       setState(() {
         _useData = Data;
-        print(_useData[1].country);
-        //_UseList = useData;
-        // print("p" + _UseList.length.toString());
       });
     });
     loadMaster().then((Data1) {
       setState(() {
         _useMaster = Data1;
-        print(_useMaster[1].company);
-        //_UseList = useData;
-        // print("p" + _UseList.length.toString());
       });
     });
   }
@@ -112,63 +71,119 @@ class _MainPageState extends State<MainPage> {
   void initState() {
     super.initState();
     LoadData();
-    // loadCountry();
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-       /* appBar: new AppBar(
-          title: new Text("Desi Videsi"),
-          centerTitle: true,
-          elevation: 5,
-        ),*/
         body: Column(
-
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        SizedBox(height: 20),
+        Row(
           children: <Widget>[
-            Text("Swadesi - Aatma nirbhar Bharat"),
-            Expanded(
-              child: new ListView.builder(
-                  padding: EdgeInsets.fromLTRB(8, 8, 8, 8),
-                  itemCount: category_a.length,
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (BuildContext context, int index) {
-                    return Card(
-                      elevation: 5,
-                      child: Column(
-                        children: <Widget>[
-                          Text(category_a[index]["mc_name"]),
-                          SizedBox(
-                            height: 5,
-                          ),
-                          FutureBuilder(
-                            future:
-                                _getImage(context, "images/"+category_a[index]["mc_url"]+".jpg"),
-                            builder: (context, snapshot) {
-                              if (snapshot.connectionState ==
-                                  ConnectionState.done)
-                                return Container(
-                                  height: 100,
-                                  width: 100,
-                                  child: snapshot.data,
-                                );
-
-                              if (snapshot.connectionState ==
-                                  ConnectionState.waiting)
-                                return Container(
-                                    height: 100,
-                                    width: 100,
-                                    child: CircularProgressIndicator());
-
-                              return Container();
-                            },
-                          ),
-                        ],
-                      ),
-                    );
-                  }),
+            Text(
+              "Swadesi",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
+            //butoon goes here
           ],
-        ));
+        ),
+        SizedBox(height: 150),
+        Container(
+          height: 190,
+          child: category_list(),
+        ),
+      ],
+    ));
+  }
+
+  Widget category_list() {
+    return new ListView.builder(
+        padding: EdgeInsets.fromLTRB(8, 8, 8, 8),
+        itemCount: category_a.length,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (BuildContext context, int index) {
+          return Container(
+              height: 130,
+              margin: const EdgeInsets.only(right: 10.0),
+              width: MediaQuery.of(context).size.width / 2 - 10,
+              child: Stack(
+                children: <Widget>[
+                  name_card(index),
+                  image_card(index),
+                ],
+              ));
+        });
+  }
+
+  Widget name_card(int index) {
+    return Container(
+      height: 180,
+      margin: const EdgeInsets.only(top: 20.0),
+      width: MediaQuery.of(context).size.width / 2 - 25,
+      child: Card(
+          color: LightColor.seeBlue,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12.0),
+          ),
+          elevation: 10,
+          child: Align(
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                category_a[index]["mc_name"],
+                style: TextStyle(
+                    fontFamily: 'RobotoMono',
+                    fontSize: 16,
+                    color: LightColor.lightBlue,
+                    fontWeight: FontWeight.w500),
+              ),
+            ),
+          )),
+    );
+  }
+
+  Widget image_card(int index) {
+    return Align(
+      alignment: Alignment.topRight,
+      child: Container(
+        width: MediaQuery.of(context).size.width / 2 - 40,
+        height: 110,
+        child: Card(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12.0),
+          ),
+          elevation: 2,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: showImage(index),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget showImage(int index) {
+    return FutureBuilder(
+      future:
+          _getImage(context, "images/" + category_a[index]["mc_url"] + ".jpg"),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.done)
+          return Container(
+            height: 100,
+            width: 100,
+            child: snapshot.data,
+          );
+
+        if (snapshot.connectionState == ConnectionState.waiting)
+          return Container(
+              height: 100, width: 100, child: CircularProgressIndicator());
+
+        return Container();
+      },
+    );
   }
 
   Future<Widget> _getImage(BuildContext context, String image) async {

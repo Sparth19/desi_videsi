@@ -1,0 +1,2660 @@
+[
+  {
+    "Country": "Austria",
+    "Company": "Red Bull",
+    "Country Pic": "austria_flag",
+    "Company Pic": "red_bull"
+  },
+  {
+    "Country": "Canada",
+    "Company": "Aero Group",
+    "Country Pic": "canada_flag",
+    "Company Pic": "aero_group"
+  },
+  {
+    "Country": "Canada",
+    "Company": "Aldo Group",
+    "Country Pic": "canada_flag",
+    "Company Pic": "aldo_group"
+  },
+  {
+    "Country": "Canada",
+    "Company": "BlackBerry Limited",
+    "Country Pic": "canada_flag",
+    "Company Pic": "blackberry_limited"
+  },
+  {
+    "Country": "Canada",
+    "Company": "McCain",
+    "Country Pic": "canada_flag",
+    "Company Pic": "mccain"
+  },
+  {
+    "Country": "China",
+    "Company": "BBK Electronics",
+    "Country Pic": "china_flag",
+    "Company Pic": "bbk_electronics"
+  },
+  {
+    "Country": "China",
+    "Company": "DJI",
+    "Country Pic": "china_flag",
+    "Company Pic": "dji"
+  },
+  {
+    "Country": "China",
+    "Company": "Haier",
+    "Country Pic": "china_flag",
+    "Company Pic": "haier"
+  },
+  {
+    "Country": "China",
+    "Company": "Huawei",
+    "Country Pic": "china_flag",
+    "Company Pic": "huawei"
+  },
+  {
+    "Country": "China",
+    "Company": "Qianjiang Group",
+    "Country Pic": "china_flag",
+    "Company Pic": "qianjiang_group"
+  },
+  {
+    "Country": "China",
+    "Company": "Realme",
+    "Country Pic": "china_flag",
+    "Company Pic": "realme"
+  },
+  {
+    "Country": "China",
+    "Company": "Saic Motors",
+    "Country Pic": "china_flag",
+    "Company Pic": "saic_motors"
+  },
+  {
+    "Country": "China",
+    "Company": "Shein",
+    "Country Pic": "china_flag",
+    "Company Pic": "shein"
+  },
+  {
+    "Country": "China",
+    "Company": "Xiaomi",
+    "Country Pic": "china_flag",
+    "Company Pic": "xiaomi"
+  },
+  {
+    "Country": "Denmark",
+    "Company": "Bestseller A/S",
+    "Country Pic": "denmark_flag",
+    "Company Pic": "bestseller"
+  },
+  {
+    "Country": "Denmark",
+    "Company": "GN Audio",
+    "Country Pic": "denmark_flag",
+    "Company Pic": "gn_audio"
+  },
+  {
+    "Country": "Finland",
+    "Company": "Nokia Corporation",
+    "Country Pic": "finland_flag",
+    "Company Pic": "nokia_corporation"
+  },
+  {
+    "Country": "France",
+    "Company": "Celio",
+    "Country Pic": "france_flag",
+    "Company Pic": "celio"
+  },
+  {
+    "Country": "France",
+    "Company": "Decathlon",
+    "Country Pic": "france_flag",
+    "Company Pic": "decathlon"
+  },
+  {
+    "Country": "France",
+    "Company": "Delsey",
+    "Country Pic": "france_flag",
+    "Company Pic": "delsey"
+  },
+  {
+    "Country": "France",
+    "Company": "Lacoste",
+    "Country Pic": "france_flag",
+    "Company Pic": "lacoste"
+  },
+  {
+    "Country": "France",
+    "Company": "Lagardere Group",
+    "Country Pic": "france_flag",
+    "Company Pic": "lagardere_group"
+  },
+  {
+    "Country": "France",
+    "Company": "Loreal",
+    "Country Pic": "france_flag",
+    "Company Pic": "loreal"
+  },
+  {
+    "Country": "France",
+    "Company": "Motul",
+    "Country Pic": "france_flag",
+    "Company Pic": "motul"
+  },
+  {
+    "Country": "France",
+    "Company": "Promod",
+    "Country Pic": "france_flag",
+    "Company Pic": "promod"
+  },
+  {
+    "Country": "France",
+    "Company": "Renault",
+    "Country Pic": "france_flag",
+    "Company Pic": "renault"
+  },
+  {
+    "Country": "France",
+    "Company": "Schneider Electric",
+    "Country Pic": "france_flag",
+    "Company Pic": "schneider_electric"
+  },
+  {
+    "Country": "France",
+    "Company": "Total",
+    "Country Pic": "france_flag",
+    "Company Pic": "total"
+  },
+  {
+    "Country": "Germany",
+    "Company": "Adidas",
+    "Country Pic": "germany_flag",
+    "Company Pic": "adidas"
+  },
+  {
+    "Country": "Germany",
+    "Company": "Aurelius Group",
+    "Country Pic": "germany_flag",
+    "Company Pic": "aurelius_group"
+  },
+  {
+    "Country": "Germany",
+    "Company": "Beiersdorf",
+    "Country Pic": "germany_flag",
+    "Company Pic": "beiersdorf"
+  },
+  {
+    "Country": "Germany",
+    "Company": "Beyerdynamic",
+    "Country Pic": "germany_flag",
+    "Company Pic": "beyerdynamic"
+  },
+  {
+    "Country": "Germany",
+    "Company": "BMW",
+    "Country Pic": "germany_flag",
+    "Company Pic": "bmw"
+  },
+  {
+    "Country": "Germany",
+    "Company": "Bosch",
+    "Country Pic": "germany_flag",
+    "Company Pic": "bosch"
+  },
+  {
+    "Country": "Germany",
+    "Company": "Daimler AG",
+    "Country Pic": "germany_flag",
+    "Company Pic": "daimler_ag"
+  },
+  {
+    "Country": "Germany",
+    "Company": "Dr. Oetker",
+    "Country Pic": "germany_flag",
+    "Company Pic": "dr_oetker"
+  },
+  {
+    "Country": "Germany",
+    "Company": "Puma",
+    "Country Pic": "germany_flag",
+    "Company Pic": "puma"
+  },
+  {
+    "Country": "Germany",
+    "Company": "s. Oliver Group",
+    "Country Pic": "germany_flag",
+    "Company Pic": "s_oliver_group"
+  },
+  {
+    "Country": "Germany",
+    "Company": "Sebamed",
+    "Country Pic": "germany_flag",
+    "Company Pic": "sebamed"
+  },
+  {
+    "Country": "Germany",
+    "Company": "Sennheiser Electronic",
+    "Country Pic": "germany_flag",
+    "Company Pic": "sennheiser_electronic"
+  },
+  {
+    "Country": "Germany",
+    "Company": "Volkswagen",
+    "Country Pic": "germany_flag",
+    "Company Pic": "volkswagen"
+  },
+  {
+    "Country": "Hong Kong",
+    "Company": "Ascot Chang",
+    "Country Pic": "hong_kong_flag",
+    "Company Pic": "ascot_chang"
+  },
+  {
+    "Country": "Hong Kong",
+    "Company": "Samsonite",
+    "Country Pic": "hong_kong_flag",
+    "Company Pic": "samsonite"
+  },
+  {
+    "Country": "Hong Kong",
+    "Company": "Zeeva International",
+    "Country Pic": "hong_kong_flag",
+    "Company Pic": "zeeva_international"
+  },
+  {
+    "Country": "India",
+    "Company": "Action Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "action_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Adani Wilmar",
+    "Country Pic": "india_flag",
+    "Company Pic": "adani_wilmar"
+  },
+  {
+    "Country": "India",
+    "Company": "Aditya Birla",
+    "Country Pic": "india_flag",
+    "Company Pic": "aditya_birla"
+  },
+  {
+    "Country": "India",
+    "Company": "Aiqon",
+    "Country Pic": "india_flag",
+    "Company Pic": "aiqon"
+  },
+  {
+    "Country": "India",
+    "Company": "Ajanta",
+    "Country Pic": "india_flag",
+    "Company Pic": "ajanta"
+  },
+  {
+    "Country": "India",
+    "Company": "Ajay",
+    "Country Pic": "india_flag",
+    "Company Pic": "ajay"
+  },
+  {
+    "Country": "India",
+    "Company": "Alpino Health Foods",
+    "Country Pic": "india_flag",
+    "Company Pic": "alpino_health_foods"
+  },
+  {
+    "Country": "India",
+    "Company": "Alpino Tech",
+    "Country Pic": "india_flag",
+    "Company Pic": "alpino_tech"
+  },
+  {
+    "Country": "India",
+    "Company": "Amalgamations Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "amalgamations_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Amara Raja",
+    "Country Pic": "india_flag",
+    "Company Pic": "amara_raja"
+  },
+  {
+    "Country": "India",
+    "Company": "Amkette",
+    "Country Pic": "india_flag",
+    "Company Pic": "amkette"
+  },
+  {
+    "Country": "India",
+    "Company": "Amul",
+    "Country Pic": "india_flag",
+    "Company Pic": "amul"
+  },
+  {
+    "Country": "India",
+    "Company": "Anchor Health & Beauty Care",
+    "Country Pic": "india_flag",
+    "Company Pic": "anchor_health"
+  },
+  {
+    "Country": "India",
+    "Company": "Arvind Limited",
+    "Country Pic": "india_flag",
+    "Company Pic": "arvind_limited"
+  },
+  {
+    "Country": "India",
+    "Company": "Avacare",
+    "Country Pic": "india_flag",
+    "Company Pic": "avacare"
+  },
+  {
+    "Country": "India",
+    "Company": "Bagrry's",
+    "Country Pic": "india_flag",
+    "Company Pic": "bagrrys"
+  },
+  {
+    "Country": "India",
+    "Company": "Bajaj Consumer Care",
+    "Country Pic": "india_flag",
+    "Company Pic": "bajaj_consumer_care"
+  },
+  {
+    "Country": "India",
+    "Company": "Bajaj Electric",
+    "Country Pic": "india_flag",
+    "Company Pic": "bajaj_electric"
+  },
+  {
+    "Country": "India",
+    "Company": "Bajaj Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "bajaj_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Balaji",
+    "Country Pic": "india_flag",
+    "Company Pic": "balaji"
+  },
+  {
+    "Country": "India",
+    "Company": "Bangalore Watch Company",
+    "Country Pic": "india_flag",
+    "Company Pic": "bangalore_watch_company"
+  },
+  {
+    "Country": "India",
+    "Company": "Base Corporation",
+    "Country Pic": "india_flag",
+    "Company Pic": "base_corporation"
+  },
+  {
+    "Country": "India",
+    "Company": "Being Human Clothing",
+    "Country Pic": "india_flag",
+    "Company Pic": "being_human_clothing"
+  },
+  {
+    "Country": "India",
+    "Company": "Biba Apparels",
+    "Country Pic": "india_flag",
+    "Company Pic": "biba_apparels"
+  },
+  {
+    "Country": "India",
+    "Company": "Biotique",
+    "Country Pic": "india_flag",
+    "Company Pic": "biotique"
+  },
+  {
+    "Country": "India",
+    "Company": "Blue Star",
+    "Country Pic": "india_flag",
+    "Company Pic": "blue_star"
+  },
+  {
+    "Country": "India",
+    "Company": "Blue Tokai",
+    "Country Pic": "india_flag",
+    "Company Pic": "blue_tokai"
+  },
+  {
+    "Country": "India",
+    "Company": "Boat",
+    "Country Pic": "india_flag",
+    "Company Pic": "boat"
+  },
+  {
+    "Country": "India",
+    "Company": "Bombay Shaving Co",
+    "Country Pic": "india_flag",
+    "Company Pic": "bombay_shaving_company"
+  },
+  {
+    "Country": "India",
+    "Company": "Brandis India",
+    "Country Pic": "india_flag",
+    "Company Pic": "brandis_india"
+  },
+  {
+    "Country": "India",
+    "Company": "Britannia",
+    "Country Pic": "india_flag",
+    "Company Pic": "britannia"
+  },
+  {
+    "Country": "India",
+    "Company": "Butterfly",
+    "Country Pic": "india_flag",
+    "Company Pic": "butterfly"
+  },
+  {
+    "Country": "India",
+    "Company": "Campus Shoes",
+    "Country Pic": "india_flag",
+    "Company Pic": "campus_shoes"
+  },
+  {
+    "Country": "India",
+    "Company": "CandyTech",
+    "Country Pic": "india_flag",
+    "Company Pic": "candytech"
+  },
+  {
+    "Country": "India",
+    "Company": "Capital Foods",
+    "Country Pic": "india_flag",
+    "Company Pic": "capital_foods"
+  },
+  {
+    "Country": "India",
+    "Company": "Captain Tractors",
+    "Country Pic": "india_flag",
+    "Company Pic": "captain_tractors_company"
+  },
+  {
+    "Country": "India",
+    "Company": "Catwalk Worldwide",
+    "Country Pic": "india_flag",
+    "Company Pic": "catwalk_worldwide"
+  },
+  {
+    "Country": "India",
+    "Company": "CavinKare",
+    "Country Pic": "india_flag",
+    "Company Pic": "cavinkare"
+  },
+  {
+    "Country": "India",
+    "Company": "Celkon",
+    "Country Pic": "india_flag",
+    "Company Pic": "celkon"
+  },
+  {
+    "Country": "India",
+    "Company": "Chitra'm",
+    "Country Pic": "india_flag",
+    "Company Pic": "chitram"
+  },
+  {
+    "Country": "India",
+    "Company": "Chumbak",
+    "Country Pic": "india_flag",
+    "Company Pic": "chumbak"
+  },
+  {
+    "Country": "India",
+    "Company": "Cochoa",
+    "Country Pic": "india_flag",
+    "Company Pic": "cochoa"
+  },
+  {
+    "Country": "India",
+    "Company": "Coffee Day",
+    "Country Pic": "india_flag",
+    "Company Pic": "coffee_day"
+  },
+  {
+    "Country": "India",
+    "Company": "Colorbar",
+    "Country Pic": "india_flag",
+    "Company Pic": "colorbar"
+  },
+  {
+    "Country": "India",
+    "Company": "Cotton King",
+    "Country Pic": "india_flag",
+    "Company Pic": "cotton_king"
+  },
+  {
+    "Country": "India",
+    "Company": "Creative Lifestyle",
+    "Country Pic": "india_flag",
+    "Company Pic": "creative_lifestyle"
+  },
+  {
+    "Country": "India",
+    "Company": "Credo Brands Marketing",
+    "Country Pic": "india_flag",
+    "Company Pic": "credo_brands_marketing"
+  },
+  {
+    "Country": "India",
+    "Company": "Creo",
+    "Country Pic": "india_flag",
+    "Company Pic": "creo"
+  },
+  {
+    "Country": "India",
+    "Company": "Crompton Greaves",
+    "Country Pic": "india_flag",
+    "Company Pic": "crompton_greaves"
+  },
+  {
+    "Country": "India",
+    "Company": "Dabur",
+    "Country Pic": "india_flag",
+    "Company Pic": "dabur"
+  },
+  {
+    "Country": "India",
+    "Company": "Dinshaws",
+    "Country Pic": "india_flag",
+    "Company Pic": "dinshaws"
+  },
+  {
+    "Country": "India",
+    "Company": "Dixcy",
+    "Country Pic": "india_flag",
+    "Company Pic": "dixcy"
+  },
+  {
+    "Country": "India",
+    "Company": "Dollar Industries",
+    "Country Pic": "india_flag",
+    "Company Pic": "dollar_industries"
+  },
+  {
+    "Country": "India",
+    "Company": "DS Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "ds_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Eicher Motors",
+    "Country Pic": "india_flag",
+    "Company Pic": "eicher_motors"
+  },
+  {
+    "Country": "India",
+    "Company": "Emami",
+    "Country Pic": "india_flag",
+    "Company Pic": "emami"
+  },
+  {
+    "Country": "India",
+    "Company": "Enamor",
+    "Country Pic": "india_flag",
+    "Company Pic": "enamor"
+  },
+  {
+    "Country": "India",
+    "Company": "Epigamia",
+    "Country Pic": "india_flag",
+    "Company Pic": "epigamia"
+  },
+  {
+    "Country": "India",
+    "Company": "Escorts Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "escorts_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Eureka Forbes",
+    "Country Pic": "india_flag",
+    "Company Pic": "eureka_forbes"
+  },
+  {
+    "Country": "India",
+    "Company": "Eveready",
+    "Country Pic": "india_flag",
+    "Company Pic": "eveready"
+  },
+  {
+    "Country": "India",
+    "Company": "Exide Industries",
+    "Country Pic": "india_flag",
+    "Company Pic": "exide_industries"
+  },
+  {
+    "Country": "India",
+    "Company": "F Gear",
+    "Country Pic": "india_flag",
+    "Company Pic": "f_gear"
+  },
+  {
+    "Country": "India",
+    "Company": "Fabindia",
+    "Country Pic": "india_flag",
+    "Company Pic": "fabindia"
+  },
+  {
+    "Country": "India",
+    "Company": "FB Fashion International",
+    "Country Pic": "india_flag",
+    "Company Pic": "fb_fashion"
+  },
+  {
+    "Country": "India",
+    "Company": "Fena",
+    "Country Pic": "india_flag",
+    "Company Pic": "fena"
+  },
+  {
+    "Country": "India",
+    "Company": "Force Motors",
+    "Country Pic": "india_flag",
+    "Company Pic": "force_motors"
+  },
+  {
+    "Country": "India",
+    "Company": "Future Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "future_group"
+  },
+  {
+    "Country": "India",
+    "Company": "GD Foods",
+    "Country Pic": "india_flag",
+    "Company Pic": "gd_foods"
+  },
+  {
+    "Country": "India",
+    "Company": "GD Pharmaceuticals",
+    "Country Pic": "india_flag",
+    "Company Pic": "gd_pharmaceuticals"
+  },
+  {
+    "Country": "India",
+    "Company": "Gear Merchandise",
+    "Country Pic": "india_flag",
+    "Company Pic": "gear_merchandise"
+  },
+  {
+    "Country": "India",
+    "Company": "Genesis Colors",
+    "Country Pic": "india_flag",
+    "Company Pic": "genesis_colors"
+  },
+  {
+    "Country": "India",
+    "Company": "Giani",
+    "Country Pic": "india_flag",
+    "Company Pic": "giani"
+  },
+  {
+    "Country": "India",
+    "Company": "Girnar Food & Beverages",
+    "Country Pic": "india_flag",
+    "Company Pic": "girnar_food_beverages"
+  },
+  {
+    "Country": "India",
+    "Company": "Gits",
+    "Country Pic": "india_flag",
+    "Company Pic": "gits"
+  },
+  {
+    "Country": "India",
+    "Company": "Globus Stores",
+    "Country Pic": "india_flag",
+    "Company Pic": "globus_stores"
+  },
+  {
+    "Country": "India",
+    "Company": "Go Colors",
+    "Country Pic": "india_flag",
+    "Company Pic": "go_colors"
+  },
+  {
+    "Country": "India",
+    "Company": "Godrej",
+    "Country Pic": "india_flag",
+    "Company Pic": "godrej"
+  },
+  {
+    "Country": "India",
+    "Company": "Greendot Health",
+    "Country Pic": "india_flag",
+    "Company Pic": "greendot_health"
+  },
+  {
+    "Country": "India",
+    "Company": "Haldiram",
+    "Country Pic": "india_flag",
+    "Company Pic": "haldiram"
+  },
+  {
+    "Country": "India",
+    "Company": "Hamdard",
+    "Country Pic": "india_flag",
+    "Company Pic": "hamdard"
+  },
+  {
+    "Country": "India",
+    "Company": "HasmukhRai & Co",
+    "Country Pic": "india_flag",
+    "Company Pic": "hasmukhrai_co"
+  },
+  {
+    "Country": "India",
+    "Company": "Havmor",
+    "Country Pic": "india_flag",
+    "Company Pic": "havmor"
+  },
+  {
+    "Country": "India",
+    "Company": "Hector Beverages",
+    "Country Pic": "india_flag",
+    "Company Pic": "hector_beverages"
+  },
+  {
+    "Country": "India",
+    "Company": "Hero MotoCorp",
+    "Country Pic": "india_flag",
+    "Company Pic": "hero_motocorp"
+  },
+  {
+    "Country": "India",
+    "Company": "Hill Wild",
+    "Country Pic": "india_flag",
+    "Company Pic": "hill_wild"
+  },
+  {
+    "Country": "India",
+    "Company": "Himalaya",
+    "Country Pic": "india_flag",
+    "Company Pic": "himalaya"
+  },
+  {
+    "Country": "India",
+    "Company": "Hinduja Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "hinduja_group"
+  },
+  {
+    "Country": "India",
+    "Company": "HLL Lifecare",
+    "Country Pic": "india_flag",
+    "Company Pic": "hll_lifecare"
+  },
+  {
+    "Country": "India",
+    "Company": "Horpa",
+    "Country Pic": "india_flag",
+    "Company Pic": "horpa"
+  },
+  {
+    "Country": "India",
+    "Company": "Hygienic Research Institute",
+    "Country Pic": "india_flag",
+    "Company Pic": "hygienic_research_institute"
+  },
+  {
+    "Country": "India",
+    "Company": "iball",
+    "Country Pic": "india_flag",
+    "Company Pic": "iball"
+  },
+  {
+    "Country": "India",
+    "Company": "IFB",
+    "Country Pic": "india_flag",
+    "Company Pic": "ifb"
+  },
+  {
+    "Country": "India",
+    "Company": "Indian Oil",
+    "Country Pic": "india_flag",
+    "Company Pic": "indian_oil"
+  },
+  {
+    "Country": "India",
+    "Company": "Indian Terrain Fashions",
+    "Country Pic": "india_flag",
+    "Company Pic": "indian_terrain_fashions"
+  },
+  {
+    "Country": "India",
+    "Company": "Indo Farm Equipments",
+    "Country Pic": "india_flag",
+    "Company Pic": "indo_farm_equipments"
+  },
+  {
+    "Country": "India",
+    "Company": "Intex Technologies",
+    "Country Pic": "india_flag",
+    "Company Pic": "intex_technologies"
+  },
+  {
+    "Country": "India",
+    "Company": "ITC",
+    "Country Pic": "india_flag",
+    "Company Pic": "itc"
+  },
+  {
+    "Country": "India",
+    "Company": "J. G. Hosiery",
+    "Country Pic": "india_flag",
+    "Company Pic": "j_g_hosiery"
+  },
+  {
+    "Country": "India",
+    "Company": "Jaipur Watch Company",
+    "Country Pic": "india_flag",
+    "Company Pic": "jaipur_watch_company"
+  },
+  {
+    "Country": "India",
+    "Company": "Jashn",
+    "Country Pic": "india_flag",
+    "Company Pic": "jashn"
+  },
+  {
+    "Country": "India",
+    "Company": "Jyothy Labs",
+    "Country Pic": "india_flag",
+    "Company Pic": "jyothy_labs"
+  },
+  {
+    "Country": "India",
+    "Company": "Kamaths Ourtimes Icecreams",
+    "Country Pic": "india_flag",
+    "Company Pic": "kamaths_ourtimes_icecreams"
+  },
+  {
+    "Country": "India",
+    "Company": "Karbonn Mobiles",
+    "Country Pic": "india_flag",
+    "Company Pic": "karbonn_mobiles"
+  },
+  {
+    "Country": "India",
+    "Company": "Kenstar",
+    "Country Pic": "india_flag",
+    "Company Pic": "kenstar"
+  },
+  {
+    "Country": "India",
+    "Company": "Kent",
+    "Country Pic": "india_flag",
+    "Company Pic": "kent"
+  },
+  {
+    "Country": "India",
+    "Company": "Kewal Kiran Clothing",
+    "Country Pic": "india_flag",
+    "Company Pic": "kewal_kiran_clothing"
+  },
+  {
+    "Country": "India",
+    "Company": "Kundan Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "kundan_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Kwality Foods",
+    "Country Pic": "india_flag",
+    "Company Pic": "kwality_foods"
+  },
+  {
+    "Country": "India",
+    "Company": "Lakhani Shoes",
+    "Country Pic": "india_flag",
+    "Company Pic": "lakhani_shoes"
+  },
+  {
+    "Country": "India",
+    "Company": "Lancer Shoes",
+    "Country Pic": "india_flag",
+    "Company Pic": "lancer_shoes"
+  },
+  {
+    "Country": "India",
+    "Company": "Lava International",
+    "Country Pic": "india_flag",
+    "Company Pic": "lava_international"
+  },
+  {
+    "Country": "India",
+    "Company": "Layer'r",
+    "Country Pic": "india_flag",
+    "Company Pic": "layerr"
+  },
+  {
+    "Country": "India",
+    "Company": "Lekhraj Corp",
+    "Country Pic": "india_flag",
+    "Company Pic": "lekhraj_corp"
+  },
+  {
+    "Country": "India",
+    "Company": "Liberty Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "liberty_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Lloyd",
+    "Country Pic": "india_flag",
+    "Company Pic": "lloyd"
+  },
+  {
+    "Country": "India",
+    "Company": "Lotus Herbal",
+    "Country Pic": "india_flag",
+    "Company Pic": "lotus_herbal"
+  },
+  {
+    "Country": "India",
+    "Company": "Lovable Lingerie",
+    "Country Pic": "india_flag",
+    "Company Pic": "lovable_lingerie"
+  },
+  {
+    "Country": "India",
+    "Company": "Lux Industries",
+    "Country Pic": "india_flag",
+    "Company Pic": "lux_industries"
+  },
+  {
+    "Country": "India",
+    "Company": "Mahindra",
+    "Country Pic": "india_flag",
+    "Company Pic": "mahindra"
+  },
+  {
+    "Country": "India",
+    "Company": "Mamaearth",
+    "Country Pic": "india_flag",
+    "Company Pic": "mamaearth"
+  },
+  {
+    "Country": "India",
+    "Company": "Mankind",
+    "Country Pic": "india_flag",
+    "Company Pic": "mankind"
+  },
+  {
+    "Country": "India",
+    "Company": "Marico",
+    "Country Pic": "india_flag",
+    "Company Pic": "marico"
+  },
+  {
+    "Country": "India",
+    "Company": "Mason & Co",
+    "Country Pic": "india_flag",
+    "Company Pic": "mason_co"
+  },
+  {
+    "Country": "India",
+    "Company": "McNROE",
+    "Country Pic": "india_flag",
+    "Company Pic": "mcnroe"
+  },
+  {
+    "Country": "India",
+    "Company": "MDH",
+    "Country Pic": "india_flag",
+    "Company Pic": "mdh"
+  },
+  {
+    "Country": "India",
+    "Company": "Mee Mee",
+    "Country Pic": "india_flag",
+    "Company Pic": "mee_mee"
+  },
+  {
+    "Country": "India",
+    "Company": "Metro Shoes",
+    "Country Pic": "india_flag",
+    "Company Pic": "metro_shoes"
+  },
+  {
+    "Country": "India",
+    "Company": "Micromax Informatics",
+    "Country Pic": "india_flag",
+    "Company Pic": "micromax_informatics"
+  },
+  {
+    "Country": "India",
+    "Company": "Milastar Retail",
+    "Country Pic": "india_flag",
+    "Company Pic": "milastar_retail"
+  },
+  {
+    "Country": "India",
+    "Company": "Mirza International",
+    "Country Pic": "india_flag",
+    "Company Pic": "mirza_international"
+  },
+  {
+    "Country": "India",
+    "Company": "Mivi",
+    "Country Pic": "india_flag",
+    "Company Pic": "mivi"
+  },
+  {
+    "Country": "India",
+    "Company": "Mochi",
+    "Country Pic": "india_flag",
+    "Company Pic": "mochi"
+  },
+  {
+    "Country": "India",
+    "Company": "Mohan Clothing",
+    "Country Pic": "india_flag",
+    "Company Pic": "mohan_clothing"
+  },
+  {
+    "Country": "India",
+    "Company": "Monte Carlo Fashions",
+    "Country Pic": "india_flag",
+    "Company Pic": "monte_carlo_fashions"
+  },
+  {
+    "Country": "India",
+    "Company": "Mother Dairy",
+    "Country Pic": "india_flag",
+    "Company Pic": "mother_dairy"
+  },
+  {
+    "Country": "India",
+    "Company": "MTR",
+    "Country Pic": "india_flag",
+    "Company Pic": "mtr"
+  },
+  {
+    "Country": "India",
+    "Company": "My Little Moppet Store",
+    "Country Pic": "india_flag",
+    "Company Pic": "my_little_moppet_store"
+  },
+  {
+    "Country": "India",
+    "Company": "Nippo",
+    "Country Pic": "india_flag",
+    "Company Pic": "nippo"
+  },
+  {
+    "Country": "India",
+    "Company": "Nirma",
+    "Country Pic": "india_flag",
+    "Company Pic": "nirma"
+  },
+  {
+    "Country": "India",
+    "Company": "Nivia Sports",
+    "Country Pic": "india_flag",
+    "Company Pic": "nivia_sports"
+  },
+  {
+    "Country": "India",
+    "Company": "Noise",
+    "Country Pic": "india_flag",
+    "Company Pic": "noise"
+  },
+  {
+    "Country": "India",
+    "Company": "Nykaa",
+    "Country Pic": "india_flag",
+    "Company Pic": "nykaa"
+  },
+  {
+    "Country": "India",
+    "Company": "Ochre and Black",
+    "Country Pic": "india_flag",
+    "Company Pic": "ochre_and_black"
+  },
+  {
+    "Country": "India",
+    "Company": "Okaya Power Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "okaya_power_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Orient",
+    "Country Pic": "india_flag",
+    "Company Pic": "orient"
+  },
+  {
+    "Country": "India",
+    "Company": "Orient Beverages",
+    "Country Pic": "india_flag",
+    "Company Pic": "orient_beverages"
+  },
+  {
+    "Country": "India",
+    "Company": "Pallonji",
+    "Country Pic": "india_flag",
+    "Company Pic": "pallonji"
+  },
+  {
+    "Country": "India",
+    "Company": "Palred Technologies",
+    "Country Pic": "india_flag",
+    "Company Pic": "palred_technologies"
+  },
+  {
+    "Country": "India",
+    "Company": "Parag Foods",
+    "Country Pic": "india_flag",
+    "Company Pic": "parag_foods"
+  },
+  {
+    "Country": "India",
+    "Company": "Paragon Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "paragon_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Parakh Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "parakh_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Parle",
+    "Country Pic": "india_flag",
+    "Company Pic": "parle"
+  },
+  {
+    "Country": "India",
+    "Company": "Parle Agro",
+    "Country Pic": "india_flag",
+    "Company Pic": "parle_agro"
+  },
+  {
+    "Country": "India",
+    "Company": "Patanjali",
+    "Country Pic": "india_flag",
+    "Company Pic": "patanjali"
+  },
+  {
+    "Country": "India",
+    "Company": "Pigeon",
+    "Country Pic": "india_flag",
+    "Company Pic": "pigeon"
+  },
+  {
+    "Country": "India",
+    "Company": "Pioma Industries",
+    "Country Pic": "india_flag",
+    "Company Pic": "pioma_industries"
+  },
+  {
+    "Country": "India",
+    "Company": "Planet Retail",
+    "Country Pic": "india_flag",
+    "Company Pic": "planet_retail"
+  },
+  {
+    "Country": "India",
+    "Company": "Preet Agro",
+    "Country Pic": "india_flag",
+    "Company Pic": "preet_agro"
+  },
+  {
+    "Country": "India",
+    "Company": "Proline India",
+    "Country Pic": "india_flag",
+    "Company Pic": "proline_india"
+  },
+  {
+    "Country": "India",
+    "Company": "Promise",
+    "Country Pic": "india_flag",
+    "Company Pic": "promise"
+  },
+  {
+    "Country": "India",
+    "Company": "Provogue India",
+    "Country Pic": "india_flag",
+    "Company Pic": "provogue_india"
+  },
+  {
+    "Country": "India",
+    "Company": "Raymonds",
+    "Country Pic": "india_flag",
+    "Company Pic": "raymonds"
+  },
+  {
+    "Country": "India",
+    "Company": "Regal Shoes",
+    "Country Pic": "india_flag",
+    "Company Pic": "regal_shoes"
+  },
+  {
+    "Country": "India",
+    "Company": "Relaxo Footwares",
+    "Country Pic": "india_flag",
+    "Company Pic": "relaxo_footwares"
+  },
+  {
+    "Country": "India",
+    "Company": "Reliance Jio",
+    "Country Pic": "india_flag",
+    "Company Pic": "reliance_jio"
+  },
+  {
+    "Country": "India",
+    "Company": "Reliance Retail",
+    "Country Pic": "india_flag",
+    "Company Pic": "reliance_retail"
+  },
+  {
+    "Country": "India",
+    "Company": "Revlon India",
+    "Country Pic": "india_flag",
+    "Company Pic": "revlon_india"
+  },
+  {
+    "Country": "India",
+    "Company": "Rhiti Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "rhiti_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Roadgods",
+    "Country Pic": "india_flag",
+    "Company Pic": "roadgods"
+  },
+  {
+    "Country": "India",
+    "Company": "Royal",
+    "Country Pic": "india_flag",
+    "Company Pic": "royal"
+  },
+  {
+    "Country": "India",
+    "Company": "RP-Sanjiv Goenka Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "rp_sanjiv"
+  },
+  {
+    "Country": "India",
+    "Company": "RSPL Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "rspl_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Rupa Company",
+    "Country Pic": "india_flag",
+    "Company Pic": "rupa_company"
+  },
+  {
+    "Country": "India",
+    "Company": "S Narendra Kumar & Co",
+    "Country Pic": "india_flag",
+    "Company Pic": "s_narendrakumar_co"
+  },
+  {
+    "Country": "India",
+    "Company": "S.N. Footwear Industries",
+    "Country Pic": "india_flag",
+    "Company Pic": "snfootwear"
+  },
+  {
+    "Country": "India",
+    "Company": "Sabhyasachi",
+    "Country Pic": "india_flag",
+    "Company Pic": "sabhyasachi"
+  },
+  {
+    "Country": "India",
+    "Company": "Safari Industries",
+    "Country Pic": "india_flag",
+    "Company Pic": "safari_industries"
+  },
+  {
+    "Country": "India",
+    "Company": "Sai Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "sai_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Sara Soule",
+    "Country Pic": "india_flag",
+    "Company Pic": "sara_soule"
+  },
+  {
+    "Country": "India",
+    "Company": "Satva",
+    "Country Pic": "india_flag",
+    "Company Pic": "satva"
+  },
+  {
+    "Country": "India",
+    "Company": "Shahnaz Husain",
+    "Country Pic": "india_flag",
+    "Company Pic": "shahnaz_husain"
+  },
+  {
+    "Country": "India",
+    "Company": "Shoppers Stop",
+    "Country Pic": "india_flag",
+    "Company Pic": "shoppers_stop"
+  },
+  {
+    "Country": "India",
+    "Company": "Siyaram Silk Mills",
+    "Country Pic": "india_flag",
+    "Company Pic": "siyaram_silk_mills"
+  },
+  {
+    "Country": "India",
+    "Company": "Smartron",
+    "Country Pic": "india_flag",
+    "Company Pic": "smartron"
+  },
+  {
+    "Country": "India",
+    "Company": "Sonalika Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "sonalika_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Soothe Healthcare",
+    "Country Pic": "india_flag",
+    "Company Pic": "soothe_healthcare"
+  },
+  {
+    "Country": "India",
+    "Company": "Southern Batteries",
+    "Country Pic": "india_flag",
+    "Company Pic": "southern_batteries"
+  },
+  {
+    "Country": "India",
+    "Company": "Spice Mobility Limited",
+    "Country Pic": "india_flag",
+    "Company Pic": "spice_mobility_limited"
+  },
+  {
+    "Country": "India",
+    "Company": "Spykar Lifestyle",
+    "Country Pic": "india_flag",
+    "Company Pic": "spykar_lifestyle"
+  },
+  {
+    "Country": "India",
+    "Company": "Standard Corp",
+    "Country Pic": "india_flag",
+    "Company Pic": "standard_corp"
+  },
+  {
+    "Country": "India",
+    "Company": "Steelbird Hi-Tech",
+    "Country Pic": "india_flag",
+    "Company Pic": "steelbird_hi_tech"
+  },
+  {
+    "Country": "India",
+    "Company": "Studds",
+    "Country Pic": "india_flag",
+    "Company Pic": "studds"
+  },
+  {
+    "Country": "India",
+    "Company": "Su-Kam Power Systems",
+    "Country Pic": "india_flag",
+    "Company Pic": "su_kam_power_systems"
+  },
+  {
+    "Country": "India",
+    "Company": "Surya Roshni",
+    "Country Pic": "india_flag",
+    "Company Pic": "surya_roshni"
+  },
+  {
+    "Country": "India",
+    "Company": "Symphony",
+    "Country Pic": "india_flag",
+    "Company Pic": "symphony"
+  },
+  {
+    "Country": "India",
+    "Company": "Syska",
+    "Country Pic": "india_flag",
+    "Company Pic": "syska"
+  },
+  {
+    "Country": "India",
+    "Company": "Tata",
+    "Country Pic": "india_flag",
+    "Company Pic": "tata"
+  },
+  {
+    "Country": "India",
+    "Company": "TCNS Clothing",
+    "Country Pic": "india_flag",
+    "Company Pic": "tcns_clothing"
+  },
+  {
+    "Country": "India",
+    "Company": "The Man Company",
+    "Country Pic": "india_flag",
+    "Company Pic": "the_man_company"
+  },
+  {
+    "Country": "India",
+    "Company": "Tide Water Oil",
+    "Country Pic": "india_flag",
+    "Company Pic": "tide_water_oil"
+  },
+  {
+    "Country": "India",
+    "Company": "Titan",
+    "Country Pic": "india_flag",
+    "Company Pic": "titan"
+  },
+  {
+    "Country": "India",
+    "Company": "Tresmode",
+    "Country Pic": "india_flag",
+    "Company Pic": "tresmode"
+  },
+  {
+    "Country": "India",
+    "Company": "Trishul Tractors",
+    "Country Pic": "india_flag",
+    "Company Pic": "trishul_tractors_company"
+  },
+  {
+    "Country": "India",
+    "Company": "True Power",
+    "Country Pic": "india_flag",
+    "Company Pic": "true_power"
+  },
+  {
+    "Country": "India",
+    "Company": "TTK",
+    "Country Pic": "india_flag",
+    "Company Pic": "ttk"
+  },
+  {
+    "Country": "India",
+    "Company": "TVS Motors",
+    "Country Pic": "india_flag",
+    "Company Pic": "tvs_motors"
+  },
+  {
+    "Country": "India",
+    "Company": "Universal Sportsbiz",
+    "Country Pic": "india_flag",
+    "Company Pic": "universal_sportsbiz"
+  },
+  {
+    "Country": "India",
+    "Company": "Vadilal",
+    "Country Pic": "india_flag",
+    "Company Pic": "vadilal"
+  },
+  {
+    "Country": "India",
+    "Company": "Vanesa Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "vanesa_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Vedant Fashions",
+    "Country Pic": "india_flag",
+    "Company Pic": "vedant_fashions"
+  },
+  {
+    "Country": "India",
+    "Company": "Vega Auto Accessories",
+    "Country Pic": "india_flag",
+    "Company Pic": "vega_auto_accessories"
+  },
+  {
+    "Country": "India",
+    "Company": "V-Guard Industries",
+    "Country Pic": "india_flag",
+    "Company Pic": "v_guard"
+  },
+  {
+    "Country": "India",
+    "Company": "Vicco",
+    "Country Pic": "india_flag",
+    "Company Pic": "vicco"
+  },
+  {
+    "Country": "India",
+    "Company": "Videocon",
+    "Country Pic": "india_flag",
+    "Company Pic": "videocon"
+  },
+  {
+    "Country": "India",
+    "Company": "Vini",
+    "Country Pic": "india_flag",
+    "Company Pic": "vini"
+  },
+  {
+    "Country": "India",
+    "Company": "VIP Clothings",
+    "Country Pic": "india_flag",
+    "Company Pic": "vip_clothings"
+  },
+  {
+    "Country": "India",
+    "Company": "VIP Industries",
+    "Country Pic": "india_flag",
+    "Company Pic": "vip_industries"
+  },
+  {
+    "Country": "India",
+    "Company": "Virola Shoes",
+    "Country Pic": "india_flag",
+    "Company Pic": "virola_shoes"
+  },
+  {
+    "Country": "India",
+    "Company": "Wagh Bakri Tea Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "wagh_bakri_teagroup"
+  },
+  {
+    "Country": "India",
+    "Company": "WestCoast Group",
+    "Country Pic": "india_flag",
+    "Company Pic": "westcoast_group"
+  },
+  {
+    "Country": "India",
+    "Company": "Wildcraft",
+    "Country Pic": "india_flag",
+    "Company Pic": "wildcraft"
+  },
+  {
+    "Country": "India",
+    "Company": "Wipro",
+    "Country Pic": "india_flag",
+    "Company Pic": "wipro"
+  },
+  {
+    "Country": "India",
+    "Company": "Wrangler Helmets",
+    "Country Pic": "india_flag",
+    "Company Pic": "wrangler_helmets"
+  },
+  {
+    "Country": "India",
+    "Company": "Xolo",
+    "Country Pic": "india_flag",
+    "Company Pic": "xolo"
+  },
+  {
+    "Country": "India",
+    "Company": "Yellow Diamond",
+    "Country Pic": "india_flag",
+    "Company Pic": "yellow_diamond"
+  },
+  {
+    "Country": "India",
+    "Company": "YU Televentures",
+    "Country Pic": "india_flag",
+    "Company Pic": "yu_televentures"
+  },
+  {
+    "Country": "India",
+    "Company": "Zebronics",
+    "Country Pic": "india_flag",
+    "Company Pic": "zebronics"
+  },
+  {
+    "Country": "India",
+    "Company": "Zeven",
+    "Country Pic": "india_flag",
+    "Company Pic": "zeven"
+  },
+  {
+    "Country": "India",
+    "Company": "Zodiac Clothing",
+    "Country Pic": "india_flag",
+    "Company Pic": "zodiac_clothing"
+  },
+  {
+    "Country": "India",
+    "Company": "Zorabian Chicks",
+    "Country Pic": "india_flag",
+    "Company Pic": "zorabian_chicks"
+  },
+  {
+    "Country": "India",
+    "Company": "Zydus Wellness",
+    "Country Pic": "india_flag",
+    "Company Pic": "zydus_wellness"
+  },
+  {
+    "Country": "India & Austria",
+    "Company": "KTM AG",
+    "Country Pic": "world_flag",
+    "Company Pic": "ktm_ag"
+  },
+  {
+    "Country": "Italy",
+    "Company": "BasicNet",
+    "Country Pic": "italy_flag",
+    "Company Pic": "basicnet"
+  },
+  {
+    "Country": "Italy",
+    "Company": "Benetton Group",
+    "Country Pic": "italy_flag",
+    "Company Pic": "benetton_group"
+  },
+  {
+    "Country": "Italy",
+    "Company": "Borges",
+    "Country Pic": "italy_flag",
+    "Company Pic": "borges"
+  },
+  {
+    "Country": "Italy",
+    "Company": "Chicco",
+    "Country Pic": "italy_flag",
+    "Company Pic": "chicco"
+  },
+  {
+    "Country": "Italy",
+    "Company": "Dainese",
+    "Country Pic": "italy_flag",
+    "Company Pic": "dainese"
+  },
+  {
+    "Country": "Italy",
+    "Company": "Ferrari",
+    "Country Pic": "italy_flag",
+    "Company Pic": "ferrari"
+  },
+  {
+    "Country": "Italy",
+    "Company": "Ferrero",
+    "Country Pic": "italy_flag",
+    "Company Pic": "ferrero"
+  },
+  {
+    "Country": "Italy",
+    "Company": "Fila Holdings",
+    "Country Pic": "italy_flag",
+    "Company Pic": "fila_holdings"
+  },
+  {
+    "Country": "Italy",
+    "Company": "Grotto Group",
+    "Country Pic": "italy_flag",
+    "Company Pic": "grotto"
+  },
+  {
+    "Country": "Italy",
+    "Company": "Lotto Sport Italia",
+    "Country Pic": "italy_flag",
+    "Company Pic": "lotto_sport_italia"
+  },
+  {
+    "Country": "Italy",
+    "Company": "OTB Group",
+    "Country Pic": "italy_flag",
+    "Company Pic": "otb_group"
+  },
+  {
+    "Country": "Italy",
+    "Company": "Perfetti Van Melle",
+    "Country Pic": "italy_flag",
+    "Company Pic": "perfetti_van_melle"
+  },
+  {
+    "Country": "Italy",
+    "Company": "Piaggio",
+    "Country Pic": "italy_flag",
+    "Company Pic": "piaggio"
+  },
+  {
+    "Country": "Japan",
+    "Company": "ASICS",
+    "Country Pic": "japan_flag",
+    "Company Pic": "asics"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Audio-Technica",
+    "Country Pic": "japan_flag",
+    "Company Pic": "audio_technica"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Canon",
+    "Country Pic": "japan_flag",
+    "Company Pic": "canon"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Casio",
+    "Country Pic": "japan_flag",
+    "Company Pic": "casio"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Citizen",
+    "Country Pic": "japan_flag",
+    "Company Pic": "citizen"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Daikin",
+    "Country Pic": "japan_flag",
+    "Company Pic": "daikin"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Fujifilm",
+    "Country Pic": "japan_flag",
+    "Company Pic": "fujifilm"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Fujitsu",
+    "Country Pic": "japan_flag",
+    "Company Pic": "fujitsu"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Hitachi",
+    "Country Pic": "japan_flag",
+    "Company Pic": "hitachi"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Honda Motor",
+    "Country Pic": "japan_flag",
+    "Company Pic": "honda_motor"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Kawasaki",
+    "Country Pic": "japan_flag",
+    "Company Pic": "kawasaki"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Kubota Corporation",
+    "Country Pic": "japan_flag",
+    "Company Pic": "kubota_corporation"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Mitsubishi Motors",
+    "Country Pic": "japan_flag",
+    "Company Pic": "mitsubishi_motors"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Nikon",
+    "Country Pic": "japan_flag",
+    "Company Pic": "nikon"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Nissan",
+    "Country Pic": "japan_flag",
+    "Company Pic": "nissan"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Nissin Foods",
+    "Country Pic": "japan_flag",
+    "Company Pic": "nissin_foods"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Olympus",
+    "Country Pic": "japan_flag",
+    "Company Pic": "olympus"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Panasonic",
+    "Country Pic": "japan_flag",
+    "Company Pic": "panasonic"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Sanyo",
+    "Country Pic": "japan_flag",
+    "Company Pic": "sanyo"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Shoei",
+    "Country Pic": "japan_flag",
+    "Company Pic": "shoei"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Sony",
+    "Country Pic": "japan_flag",
+    "Company Pic": "sony"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Sumitomo Corporation",
+    "Country Pic": "japan_flag",
+    "Company Pic": "sumitomo_corporation"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Suzuki Corporation",
+    "Country Pic": "japan_flag",
+    "Company Pic": "suzuki_corporation"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Toyota Motor",
+    "Country Pic": "japan_flag",
+    "Company Pic": "toyota_motor"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Unicharm",
+    "Country Pic": "japan_flag",
+    "Company Pic": "unicharm"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Wacoal",
+    "Country Pic": "japan_flag",
+    "Company Pic": "wacoal"
+  },
+  {
+    "Country": "Japan",
+    "Company": "Yamaha Motor",
+    "Country Pic": "japan_flag",
+    "Company Pic": "yamaha_motor"
+  },
+  {
+    "Country": "Netherlands",
+    "Company": "CNH Industries",
+    "Country Pic": "netherlands_flag",
+    "Company Pic": "cnh_industries"
+  },
+  {
+    "Country": "Netherlands",
+    "Company": "Philips",
+    "Country Pic": "netherlands_flag",
+    "Company Pic": "philips"
+  },
+  {
+    "Country": "Netherlands",
+    "Company": "Royal Dutch Shell",
+    "Country Pic": "netherlands_flag",
+    "Company Pic": "royal_dutch_shell"
+  },
+  {
+    "Country": "Singapore",
+    "Company": "Wilmar International",
+    "Country Pic": "singapore_flag",
+    "Company Pic": "wilmar_international"
+  },
+  {
+    "Country": "South Korea",
+    "Company": "GS Group",
+    "Country Pic": "south_korea_flag",
+    "Company Pic": "gs_group"
+  },
+  {
+    "Country": "South Korea",
+    "Company": "Hyundai Motor",
+    "Country Pic": "south_korea_flag",
+    "Company Pic": "hyundai_motor"
+  },
+  {
+    "Country": "South Korea",
+    "Company": "LG",
+    "Country Pic": "south_korea_flag",
+    "Company Pic": "lg"
+  },
+  {
+    "Country": "South Korea",
+    "Company": "Samsung",
+    "Country Pic": "south_korea_flag",
+    "Company Pic": "samsung"
+  },
+  {
+    "Country": "Spain",
+    "Company": "Deoleo",
+    "Country Pic": "spain_flag",
+    "Company Pic": "deoleo"
+  },
+  {
+    "Country": "Spain",
+    "Company": "Inditex",
+    "Country Pic": "spain_flag",
+    "Company Pic": "inditex"
+  },
+  {
+    "Country": "Spain",
+    "Company": "MT Helmets",
+    "Country Pic": "spain_flag",
+    "Company Pic": "mt_helmets"
+  },
+  {
+    "Country": "Spain",
+    "Company": "Pepe Jeans Group",
+    "Country Pic": "spain_flag",
+    "Company Pic": "pepe_jeans_group"
+  },
+  {
+    "Country": "Spain",
+    "Company": "Punto Fa",
+    "Country Pic": "spain_flag",
+    "Company Pic": "punto_fa"
+  },
+  {
+    "Country": "Spain",
+    "Company": "Shiro",
+    "Country Pic": "spain_flag",
+    "Company Pic": "shiro"
+  },
+  {
+    "Country": "Sri Lanka",
+    "Company": "Mas Holdings",
+    "Country Pic": "sri_lanka_flag",
+    "Company Pic": "mas_holdings"
+  },
+  {
+    "Country": "Sweden",
+    "Company": "Daniel Wellington",
+    "Country Pic": "sweden_flag",
+    "Company Pic": "daniel_wellington"
+  },
+  {
+    "Country": "Sweden",
+    "Company": "Electrolux",
+    "Country Pic": "sweden_flag",
+    "Company Pic": "electrolux"
+  },
+  {
+    "Country": "Sweden",
+    "Company": "Hennes & Mauritz",
+    "Country Pic": "sweden_flag",
+    "Company Pic": "hennes_mauritz"
+  },
+  {
+    "Country": "Sweden",
+    "Company": "Volvo Group",
+    "Country Pic": "sweden_flag",
+    "Company Pic": "volvo_group"
+  },
+  {
+    "Country": "Switzerland",
+    "Company": "Bata Corporation",
+    "Country Pic": "switzerland_flag",
+    "Company Pic": "bata_corporation"
+  },
+  {
+    "Country": "Switzerland",
+    "Company": "Hanowa AG",
+    "Country Pic": "switzerland_flag",
+    "Company Pic": "hanowa_ag"
+  },
+  {
+    "Country": "Switzerland",
+    "Company": "Lindt",
+    "Country Pic": "switzerland_flag",
+    "Company Pic": "lindt"
+  },
+  {
+    "Country": "Switzerland",
+    "Company": "Logitech International",
+    "Country Pic": "switzerland_flag",
+    "Company Pic": "logitech_international"
+  },
+  {
+    "Country": "Switzerland",
+    "Company": "Nestle",
+    "Country Pic": "switzerland_flag",
+    "Company Pic": "nestle"
+  },
+  {
+    "Country": "Switzerland",
+    "Company": "Rado",
+    "Country Pic": "switzerland_flag",
+    "Company Pic": "rado"
+  },
+  {
+    "Country": "Switzerland",
+    "Company": "Rolex",
+    "Country Pic": "switzerland_flag",
+    "Company Pic": "rolex"
+  },
+  {
+    "Country": "Switzerland",
+    "Company": "Tag Heuer",
+    "Country Pic": "switzerland_flag",
+    "Company Pic": "tag_heuer"
+  },
+  {
+    "Country": "Switzerland",
+    "Company": "Triumph International",
+    "Country Pic": "switzerland_flag",
+    "Company Pic": "triumph_international"
+  },
+  {
+    "Country": "Switzerland",
+    "Company": "Victorinox",
+    "Country Pic": "switzerland_flag",
+    "Company Pic": "victorinox"
+  },
+  {
+    "Country": "Switzerland",
+    "Company": "Zino Davidoff Group",
+    "Country Pic": "switzerland_flag",
+    "Company Pic": "zino_davidoff"
+  },
+  {
+    "Country": "Taiwan",
+    "Company": "Acer",
+    "Country Pic": "taiwan_flag",
+    "Company Pic": "acer"
+  },
+  {
+    "Country": "Taiwan",
+    "Company": "Asus",
+    "Country Pic": "taiwan_flag",
+    "Company Pic": "asus"
+  },
+  {
+    "Country": "Taiwan",
+    "Company": "Heng Da Racing",
+    "Country Pic": "taiwan_flag",
+    "Company Pic": "heng_da_racing"
+  },
+  {
+    "Country": "Taiwan",
+    "Company": "HTC",
+    "Country Pic": "taiwan_flag",
+    "Company Pic": "htc"
+  },
+  {
+    "Country": "Taiwan",
+    "Company": "Transcend Information",
+    "Country Pic": "taiwan_flag",
+    "Company Pic": "transcend_information"
+  },
+  {
+    "Country": "UAE",
+    "Company": "Landmark Group",
+    "Country Pic": "uae_flag",
+    "Company Pic": "landmark_group"
+  },
+  {
+    "Country": "UK",
+    "Company": "Ant Audio",
+    "Country Pic": "uk_flag",
+    "Company Pic": "ant_audio"
+  },
+  {
+    "Country": "UK",
+    "Company": "BP",
+    "Country Pic": "uk_flag",
+    "Company Pic": "bp"
+  },
+  {
+    "Country": "UK",
+    "Company": "C & J Clark",
+    "Country Pic": "uk_flag",
+    "Company Pic": "c_j_clark"
+  },
+  {
+    "Country": "UK",
+    "Company": "Carlton London",
+    "Country Pic": "uk_flag",
+    "Company Pic": "carlton_london"
+  },
+  {
+    "Country": "UK",
+    "Company": "French Connection Group",
+    "Country Pic": "uk_flag",
+    "Company Pic": "french_connection_group"
+  },
+  {
+    "Country": "UK",
+    "Company": "GlaxoSmithKline",
+    "Country Pic": "uk_flag",
+    "Company Pic": "gsk_company"
+  },
+  {
+    "Country": "UK",
+    "Company": "Hindustan Unilever (HUL)",
+    "Country Pic": "uk_flag",
+    "Company Pic": "hul"
+  },
+  {
+    "Country": "UK",
+    "Company": "Iconix Brand Group",
+    "Country Pic": "uk_flag",
+    "Company Pic": "iconix_brand_group"
+  },
+  {
+    "Country": "UK",
+    "Company": "K&S Technologies",
+    "Country Pic": "uk_flag",
+    "Company Pic": "k_s_technologies"
+  },
+  {
+    "Country": "UK",
+    "Company": "Marks & Spencer Group",
+    "Country Pic": "uk_flag",
+    "Company Pic": "marks_spencer_group"
+  },
+  {
+    "Country": "UK",
+    "Company": "Pavers",
+    "Country Pic": "uk_flag",
+    "Company Pic": "pavers"
+  },
+  {
+    "Country": "UK",
+    "Company": "Pentland Group",
+    "Country Pic": "uk_flag",
+    "Company Pic": "pentland_group"
+  },
+  {
+    "Country": "UK",
+    "Company": "Reckitt Benckiser",
+    "Country Pic": "uk_flag",
+    "Company Pic": "rb"
+  },
+  {
+    "Country": "UK",
+    "Company": "Superdry Plc",
+    "Country Pic": "uk_flag",
+    "Company Pic": "superdry_plc"
+  },
+  {
+    "Country": "UK",
+    "Company": "The Body Shop",
+    "Country Pic": "uk_flag",
+    "Company Pic": "the_body_shop"
+  },
+  {
+    "Country": "UK",
+    "Company": "Triumph Motorcycles",
+    "Country Pic": "uk_flag",
+    "Company Pic": "triumph_motorcycles"
+  },
+  {
+    "Country": "UK",
+    "Company": "Truffle Collection",
+    "Country Pic": "uk_flag",
+    "Company Pic": "truffle_collection"
+  },
+  {
+    "Country": "USA",
+    "Company": "Aeropostale",
+    "Country Pic": "usa_flag",
+    "Company Pic": "aeropostale"
+  },
+  {
+    "Country": "USA",
+    "Company": "Apple",
+    "Country Pic": "usa_flag",
+    "Company Pic": "apple"
+  },
+  {
+    "Country": "USA",
+    "Company": "Ashland Global",
+    "Country Pic": "usa_flag",
+    "Company Pic": "ashland_global"
+  },
+  {
+    "Country": "USA",
+    "Company": "Authentic Brands Group",
+    "Country Pic": "usa_flag",
+    "Company Pic": "authentic_brands_group"
+  },
+  {
+    "Country": "USA",
+    "Company": "Baskin Robbins",
+    "Country Pic": "usa_flag",
+    "Company Pic": "baskin_robbins"
+  },
+  {
+    "Country": "USA",
+    "Company": "Bobbi Brown",
+    "Country Pic": "usa_flag",
+    "Company Pic": "bobbi_brown"
+  },
+  {
+    "Country": "USA",
+    "Company": "Bose Corporation",
+    "Country Pic": "usa_flag",
+    "Company Pic": "bose_corporation"
+  },
+  {
+    "Country": "USA",
+    "Company": "Carrier",
+    "Country Pic": "usa_flag",
+    "Company Pic": "carrier"
+  },
+  {
+    "Country": "USA",
+    "Company": "Cetaphil",
+    "Country Pic": "usa_flag",
+    "Company Pic": "cetaphil"
+  },
+  {
+    "Country": "USA",
+    "Company": "Clinique",
+    "Country Pic": "usa_flag",
+    "Company Pic": "clinique"
+  },
+  {
+    "Country": "USA",
+    "Company": "Coca Cola",
+    "Country Pic": "usa_flag",
+    "Company Pic": "coca_cola"
+  },
+  {
+    "Country": "USA",
+    "Company": "Colgate Palmolive",
+    "Country Pic": "usa_flag",
+    "Company Pic": "colgate_palmolive"
+  },
+  {
+    "Country": "USA",
+    "Company": "Columbia Sportswear",
+    "Country Pic": "usa_flag",
+    "Company Pic": "columbia_sportswear"
+  },
+  {
+    "Country": "USA",
+    "Company": "Conagra Brands",
+    "Country Pic": "usa_flag",
+    "Company Pic": "conagra_brands"
+  },
+  {
+    "Country": "USA",
+    "Company": "Crocs",
+    "Country Pic": "usa_flag",
+    "Company Pic": "crocs"
+  },
+  {
+    "Country": "USA",
+    "Company": "Deere & Company",
+    "Country Pic": "usa_flag",
+    "Company Pic": "deere_company"
+  },
+  {
+    "Country": "USA",
+    "Company": "Del Monte",
+    "Country Pic": "usa_flag",
+    "Company Pic": "del_monte"
+  },
+  {
+    "Country": "USA",
+    "Company": "Dell",
+    "Country Pic": "usa_flag",
+    "Company Pic": "dell"
+  },
+  {
+    "Country": "USA",
+    "Company": "Duracell",
+    "Country Pic": "usa_flag",
+    "Company Pic": "duracell"
+  },
+  {
+    "Country": "USA",
+    "Company": "ExxonMobil",
+    "Country Pic": "usa_flag",
+    "Company Pic": "exxonmobil"
+  },
+  {
+    "Country": "USA",
+    "Company": "Fiat Chrysler",
+    "Country Pic": "usa_flag",
+    "Company Pic": "fiat_chrysler"
+  },
+  {
+    "Country": "USA",
+    "Company": "Ford Motor",
+    "Country Pic": "usa_flag",
+    "Company Pic": "ford_motor"
+  },
+  {
+    "Country": "USA",
+    "Company": "Fossil",
+    "Country Pic": "usa_flag",
+    "Company Pic": "fossil"
+  },
+  {
+    "Country": "USA",
+    "Company": "Gap",
+    "Country Pic": "usa_flag",
+    "Company Pic": "gap"
+  },
+  {
+    "Country": "USA",
+    "Company": "Google",
+    "Country Pic": "usa_flag",
+    "Company Pic": "google"
+  },
+  {
+    "Country": "USA",
+    "Company": "GoPro",
+    "Country Pic": "usa_flag",
+    "Company Pic": "gopro"
+  },
+  {
+    "Country": "USA",
+    "Company": "Guess",
+    "Country Pic": "usa_flag",
+    "Company Pic": "guess"
+  },
+  {
+    "Country": "USA",
+    "Company": "Haagen Dazs",
+    "Country Pic": "usa_flag",
+    "Company Pic": "haagen_dazs"
+  },
+  {
+    "Country": "USA",
+    "Company": "Hanesbrands",
+    "Country Pic": "usa_flag",
+    "Company Pic": "hanesbrands"
+  },
+  {
+    "Country": "USA",
+    "Company": "Hersheys",
+    "Country Pic": "usa_flag",
+    "Company Pic": "hersheys"
+  },
+  {
+    "Country": "USA",
+    "Company": "Hewlett Packard",
+    "Country Pic": "usa_flag",
+    "Company Pic": "hewlett_packard"
+  },
+  {
+    "Country": "USA",
+    "Company": "HJC Helmets",
+    "Country Pic": "usa_flag",
+    "Company Pic": "hjc_helmets"
+  },
+  {
+    "Country": "USA",
+    "Company": "JanSport",
+    "Country Pic": "usa_flag",
+    "Company Pic": "jansport"
+  },
+  {
+    "Country": "USA",
+    "Company": "Jockey International",
+    "Country Pic": "usa_flag",
+    "Company Pic": "jockey_international"
+  },
+  {
+    "Country": "USA",
+    "Company": "Johnsons & Johnsons",
+    "Country Pic": "usa_flag",
+    "Company Pic": "johnsons_johnsons"
+  },
+  {
+    "Country": "USA",
+    "Company": "Kellogg's",
+    "Country Pic": "usa_flag",
+    "Company Pic": "kelloggs"
+  },
+  {
+    "Country": "USA",
+    "Company": "Kimberly Clark",
+    "Country Pic": "usa_flag",
+    "Company Pic": "kimberly_clark"
+  },
+  {
+    "Country": "USA",
+    "Company": "Kodak",
+    "Country Pic": "usa_flag",
+    "Company Pic": "kodak"
+  },
+  {
+    "Country": "USA",
+    "Company": "Kontoor Brands",
+    "Country Pic": "usa_flag",
+    "Company Pic": "kontoor_brands"
+  },
+  {
+    "Country": "USA",
+    "Company": "Kraft Heinz",
+    "Country Pic": "usa_flag",
+    "Company Pic": "kraft_heinz"
+  },
+  {
+    "Country": "USA",
+    "Company": "Leaf Group",
+    "Country Pic": "usa_flag",
+    "Company Pic": "leaf_group"
+  },
+  {
+    "Country": "USA",
+    "Company": "Levi Strauss & Co",
+    "Country Pic": "usa_flag",
+    "Company Pic": "levi_strauss_co"
+  },
+  {
+    "Country": "USA",
+    "Company": "LS2 Helmets",
+    "Country Pic": "usa_flag",
+    "Company Pic": "ls2_helmets"
+  },
+  {
+    "Country": "USA",
+    "Company": "MAC",
+    "Country Pic": "usa_flag",
+    "Company Pic": "mac"
+  },
+  {
+    "Country": "USA",
+    "Company": "Maybelline",
+    "Country Pic": "usa_flag",
+    "Company Pic": "maybelline"
+  },
+  {
+    "Country": "USA",
+    "Company": "Microsoft",
+    "Country Pic": "usa_flag",
+    "Company Pic": "microsoft"
+  },
+  {
+    "Country": "USA",
+    "Company": "Mondelez",
+    "Country Pic": "usa_flag",
+    "Company Pic": "mondelez"
+  },
+  {
+    "Country": "USA",
+    "Company": "Monster Energy",
+    "Country Pic": "usa_flag",
+    "Company Pic": "monster_energy"
+  },
+  {
+    "Country": "USA",
+    "Company": "Myntra",
+    "Country Pic": "usa_flag",
+    "Company Pic": "myntra"
+  },
+  {
+    "Country": "USA",
+    "Company": "New Balance Athletics",
+    "Country Pic": "usa_flag",
+    "Company Pic": "new_balance_athletics"
+  },
+  {
+    "Country": "USA",
+    "Company": "Nike",
+    "Country Pic": "usa_flag",
+    "Company Pic": "nike"
+  },
+  {
+    "Country": "USA",
+    "Company": "Pepsico",
+    "Country Pic": "usa_flag",
+    "Company Pic": "pepsico"
+  },
+  {
+    "Country": "USA",
+    "Company": "Pillsbury",
+    "Country Pic": "usa_flag",
+    "Company Pic": "pillsbury"
+  },
+  {
+    "Country": "USA",
+    "Company": "Plantronics",
+    "Country Pic": "usa_flag",
+    "Company Pic": "panasonic"
+  },
+  {
+    "Country": "USA",
+    "Company": "Procter & Gamble (P&G)",
+    "Country Pic": "usa_flag",
+    "Company Pic": "pg"
+  },
+  {
+    "Country": "USA",
+    "Company": "PVH Corp",
+    "Country Pic": "usa_flag",
+    "Company Pic": "pvh_corp"
+  },
+  {
+    "Country": "USA",
+    "Company": "Quaker",
+    "Country Pic": "usa_flag",
+    "Company Pic": "quaker"
+  },
+  {
+    "Country": "USA",
+    "Company": "Ralph Lauren",
+    "Country Pic": "usa_flag",
+    "Company Pic": "ralph_lauren"
+  },
+  {
+    "Country": "USA",
+    "Company": "Regent LP",
+    "Country Pic": "usa_flag",
+    "Company Pic": "regent_lp"
+  },
+  {
+    "Country": "USA",
+    "Company": "SC Johnson",
+    "Country Pic": "usa_flag",
+    "Company Pic": "sc_johnson"
+  },
+  {
+    "Country": "USA",
+    "Company": "Seagate",
+    "Country Pic": "usa_flag",
+    "Company Pic": "seagate"
+  },
+  {
+    "Country": "USA",
+    "Company": "Shure",
+    "Country Pic": "usa_flag",
+    "Company Pic": "shure"
+  },
+  {
+    "Country": "USA",
+    "Company": "Singer",
+    "Country Pic": "usa_flag",
+    "Company Pic": "singer"
+  },
+  {
+    "Country": "USA",
+    "Company": "Skechers",
+    "Country Pic": "usa_flag",
+    "Company Pic": "skechers"
+  },
+  {
+    "Country": "USA",
+    "Company": "Skullcandy",
+    "Country Pic": "usa_flag",
+    "Company Pic": "skullcandy"
+  },
+  {
+    "Country": "USA",
+    "Company": "Timex",
+    "Country Pic": "usa_flag",
+    "Company Pic": "timex"
+  },
+  {
+    "Country": "USA",
+    "Company": "U.S. Polo Association",
+    "Country Pic": "usa_flag",
+    "Company Pic": "us_polo_association"
+  },
+  {
+    "Country": "USA",
+    "Company": "Under Armour",
+    "Country Pic": "usa_flag",
+    "Company Pic": "under_armour"
+  },
+  {
+    "Country": "USA",
+    "Company": "VF Corporation",
+    "Country Pic": "usa_flag",
+    "Company Pic": "vf_corporation"
+  },
+  {
+    "Country": "USA",
+    "Company": "Western Digital",
+    "Country Pic": "usa_flag",
+    "Company Pic": "western_digital"
+  },
+  {
+    "Country": "USA",
+    "Company": "Whirpool",
+    "Country Pic": "usa_flag",
+    "Company Pic": "whirpool"
+  },
+  {
+    "Country": "USA",
+    "Company": "Wolverine World Wide",
+    "Country Pic": "usa_flag",
+    "Company Pic": "wolverine_world_wide"
+  },
+  {
+    "Country": "China",
+    "Company": "Lenovo",
+    "Country Pic": "china_flag",
+    "Company Pic": "lenovo"
+  }
+]

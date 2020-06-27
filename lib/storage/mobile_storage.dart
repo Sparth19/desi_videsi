@@ -9,4 +9,7 @@ class FireStorageService extends ChangeNotifier {
       BuildContext context, String image) async {
     return await FirebaseStorage.instance.ref().child(image).getDownloadURL();
   }
+
+
+
 }
