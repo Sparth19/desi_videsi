@@ -3,6 +3,7 @@ import 'package:desividesi/storage/mobile_storage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:desividesi/color/light_color.dart';
 import 'package:flutter/material.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 class Homepage extends StatefulWidget {
   @override
@@ -79,21 +80,64 @@ class _HomepageState extends State<Homepage> {
         body: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        SizedBox(height: 20),
-        Row(
-          children: <Widget>[
-            Text(
-              "Swadesi",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-            ),
-            //butoon goes here
-          ],
+        Container(
+          height: 150,
+          decoration: BoxDecoration(
+            color: Color(0x8090ee90),
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(35),
+                bottomRight: Radius.circular(35)),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              SizedBox(height: 40),
+              Row(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16.0,16,16,5),
+                    child: Text(
+                      "Swadesi",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 28,color: LightColor.lightBlue),
+                    ),
+                  ),
+                  //butoon goes here
+                ],
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16.0, 0, 16.0, 0),
+                child: Text(
+                  "#vocalforlocal",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                ),
+              ),
+            ],
+          ),
         ),
-        SizedBox(height: 150),
+        SizedBox(height: 10,),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16.0,5,5,5),
+          child: Text("Categories",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: LightColor.lightBlue),),
+        ),
         Container(
           height: 190,
           child: category_list(),
         ),
+
+        SizedBox(height: 10,),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16.0,5,5,5),
+          child: Text("Categories",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: LightColor.lightBlue),),
+        ),
+        Container(
+          height: 190,
+          child: category_list(),
+        ),
+
+
+
+
       ],
     ));
   }
@@ -127,7 +171,7 @@ class _HomepageState extends State<Homepage> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12.0),
           ),
-          elevation: 10,
+          elevation: 5,
           child: Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
@@ -155,7 +199,7 @@ class _HomepageState extends State<Homepage> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12.0),
           ),
-          elevation: 2,
+          elevation: 5,
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: showImage(index),
@@ -177,9 +221,9 @@ class _HomepageState extends State<Homepage> {
             child: snapshot.data,
           );
 
-        if (snapshot.connectionState == ConnectionState.waiting)
+      /*  if (snapshot.connectionState == ConnectionState.waiting)
           return Container(
-              height: 100, width: 100, child: CircularProgressIndicator());
+              height: 100, width: 100, child: CircularProgressIndicator());*/
 
         return Container();
       },
@@ -187,14 +231,15 @@ class _HomepageState extends State<Homepage> {
   }
 
   Future<Widget> _getImage(BuildContext context, String image) async {
-    Image m;
+    FadeInImage fm;
     await FireStorageService.loadFromStorage(context, image)
         .then((downloadUrl) {
-      m = Image.network(
-        downloadUrl.toString(),
+      fm = FadeInImage.memoryNetwork(
+        placeholder: kTransparentImage,
+        image: downloadUrl.toString(),
         fit: BoxFit.scaleDown,
       );
     });
-    return m;
+    return fm;
   }
 }
