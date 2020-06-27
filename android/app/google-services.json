@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "690817021177",
+    "firebase_url": "https://desi-pardesi.firebaseio.com",
+    "project_id": "desi-pardesi",
+    "storage_bucket": "desi-pardesi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690817021177:android:e8c4c9fcc452b315905e28",
+        "android_client_info": {
+          "package_name": "com.example.desividesi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690817021177-i1klhdgjur0906072a7brllvc2ddtg28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDLB4CNdQWcN_wpJHEGeeNen_NB0w4bR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690817021177-i1klhdgjur0906072a7brllvc2ddtg28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690817021177:android:9279d9546fc666a5905e28",
+        "android_client_info": {
+          "package_name": "com.royaldreams.desipardesi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690817021177-i1klhdgjur0906072a7brllvc2ddtg28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDLB4CNdQWcN_wpJHEGeeNen_NB0w4bR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690817021177-i1klhdgjur0906072a7brllvc2ddtg28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
