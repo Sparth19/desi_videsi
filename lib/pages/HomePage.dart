@@ -84,7 +84,8 @@ class _HomepageState extends State<Homepage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Container(
-          height: 5.2 * MediaQuery.of(context).size.width / 5,
+          //height: 8 * MediaQuery.of(context).size.width / 5,
+          height: 400,
           child: Stack(
             children: <Widget>[
               Container(
@@ -104,16 +105,18 @@ class _HomepageState extends State<Homepage> {
                       bottomLeft: Radius.circular(20),
                       bottomRight: Radius.circular(20)),
                 ),
-                child: Column(
+                /* child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[],
-                ),
+                  children: <Widget>[
+
+                  ],
+                ),*/
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 textDirection: TextDirection.ltr,
                 children: <Widget>[
-                  SizedBox(height: 40),
+                  SizedBox(height: 15),
                   Row(
                     children: <Widget>[
                       Padding(
@@ -138,7 +141,7 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
                     child: TextField(
                         onChanged: (value) {},
                         controller: editingController,
@@ -156,12 +159,13 @@ class _HomepageState extends State<Homepage> {
               ),
               Container(
                 margin: EdgeInsets.only(
-                    top: 2.5 * MediaQuery.of(context).size.width / 5),
+                    //top: 2 * MediaQuery.of(context).size.width / 5),
+                    top: 150),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(16.0, 5, 5, 5),
+                      padding: const EdgeInsets.fromLTRB(16.0, 15, 5, 0),
                       child: Text(
                         "Categories".toUpperCase(),
                         style: TextStyle(
@@ -183,7 +187,7 @@ class _HomepageState extends State<Homepage> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(20.0, 5, 5, 5),
+          padding: const EdgeInsets.fromLTRB(20.0, 0, 5, 5),
           child: Text(
             "Country".toUpperCase(),
             style: TextStyle(
