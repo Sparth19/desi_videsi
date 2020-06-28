@@ -85,7 +85,7 @@ class _HomepageState extends State<Homepage> {
       children: <Widget>[
         Container(
           //height: 8 * MediaQuery.of(context).size.width / 5,
-          height: 400,
+          height: 450,
           child: Stack(
             children: <Widget>[
               Container(
@@ -116,7 +116,7 @@ class _HomepageState extends State<Homepage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 textDirection: TextDirection.ltr,
                 children: <Widget>[
-                  SizedBox(height: 15),
+                  SizedBox(height: MediaQuery.of(context).size.width / 8),
                   Row(
                     children: <Widget>[
                       Padding(
@@ -159,8 +159,7 @@ class _HomepageState extends State<Homepage> {
               ),
               Container(
                 margin: EdgeInsets.only(
-                    //top: 2 * MediaQuery.of(context).size.width / 5),
-                    top: 150),
+                    top: 2.5 * MediaQuery.of(context).size.width / 5),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
