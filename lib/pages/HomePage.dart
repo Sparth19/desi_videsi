@@ -218,6 +218,17 @@ class _HomepageState extends State<Homepage> {
               height: 80,
               alignment: Alignment.centerLeft,
               margin: const EdgeInsets.all(5.0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(40.0),
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey,
+                    offset: Offset(0.0, 1.0), //(x,y)
+                    blurRadius: 6.0,
+                  ),
+                ],
+              ),
               child: Stack(
                 children: <Widget>[
                   c_name_card(index),
@@ -236,7 +247,7 @@ class _HomepageState extends State<Homepage> {
           return Container(
               height: 130,
               margin: const EdgeInsets.only(right: 10.0),
-              width: MediaQuery.of(context).size.width / 2 - 10,
+              width: MediaQuery.of(context).size.width / 3,
               child: Stack(
                 children: <Widget>[
                   name_card(index),
@@ -301,7 +312,6 @@ class _HomepageState extends State<Homepage> {
 
   Widget c_name_card(int index) {
     return Container(
-      margin: EdgeInsets.only(bottom: 5),
       padding: EdgeInsets.fromLTRB(25, 0, 0, 0),
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
@@ -339,7 +349,7 @@ class _HomepageState extends State<Homepage> {
           widthFactor: 0.2,
           heightFactor: 1,
           child: Container(
-            margin: EdgeInsets.only(bottom: 5.0, top: 0.0),
+            margin: EdgeInsets.only(bottom: 0.0, top: 0.0),
             /* decoration: BoxDecoration(
               color: MyThemeColor.primaryColor,
               boxShadow: [
