@@ -369,17 +369,6 @@ class _HomepageState extends State<Homepage> {
           heightFactor: 1,
           child: Container(
             margin: EdgeInsets.only(bottom: 0.0, top: 0.0),
-            /* decoration: BoxDecoration(
-              color: MyThemeColor.primaryColor,
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey,
-                  offset: Offset(0.0, 1.0), //(x,y)
-                  blurRadius: 6.0,
-                ),
-              ],
-              borderRadius: BorderRadius.all(Radius.circular(30)),
-            ),*/
             child: ClipRRect(
               borderRadius: BorderRadius.circular(30.0),
               child: showImage(country_a[index]["c_url"]),
