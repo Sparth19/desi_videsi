@@ -46,53 +46,47 @@ class _CategoryPageOneState extends State<CategoryPageOne> {
             style: TextStyle(letterSpacing: 2, fontWeight: FontWeight.w700),
           ),
         ),
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Expanded(
-              child: Container(
-                child: create_Category_List(context),
-              ),
-            )
-          ],
+        body: Container(
+          child: create_Category_List(context),
         ));
   }
 
   Widget create_Category_List(context) {
     return GridView.builder(
+
       itemCount: showData.length,
       padding: EdgeInsets.only(left: 5, right: 5, top: 10, bottom: 5),
-      itemBuilder: (BuildContext contextz, int index) {
+      itemBuilder: (BuildContext context, int index) {
         return InkWell(
           child: Container(
-            padding: EdgeInsets.all(1),
+
+            padding: EdgeInsets.all(0),
             child: Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15.0),
                 ),
                 elevation: 5,
-                shadowColor: MyThemeColor.secondaryColor,
                 child: Padding(
                     padding: EdgeInsets.all(5),
                     child: Column(
                       children: <Widget>[
                         Container(
-                          height: MediaQuery.of(contextz).size.height / 5,
                           child: showImage("images/" +
                               showData[index].category1Pics +
                               ".jpg"),
                         ),
+                        SizedBox(height: 10,),
                         Align(
                           alignment: Alignment.bottomCenter,
                           child: Container(
-                            color: MyThemeColor.secondaryColor,
+                           // color: MyThemeColor.secondaryColor,
                             child: Text(
                               showData[index].category1.toString(),
                               style: TextStyle(
                                   fontFamily: 'RobotoMono',
                                   fontSize: 14,
                                   letterSpacing: 1,
-                                  color: MyThemeColor.textWhite,
+                                  color: MyThemeColor.secondaryColor,
                                   fontWeight: FontWeight.w600),
                             ),
                           ),
@@ -103,8 +97,7 @@ class _CategoryPageOneState extends State<CategoryPageOne> {
         );
       },
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        mainAxisSpacing: 3.0,
+        crossAxisCount: 2
       ),
     );
   }

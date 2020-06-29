@@ -1,6 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:desividesi/color/MyTheme.dart';
 import 'package:desividesi/pages/Category_Page_1.dart';
+import 'package:desividesi/pages/Country_Page_1.dart';
 import 'package:desividesi/service/services.dart';
 import 'package:desividesi/storage/mobile_storage.dart';
 import 'package:flutter/cupertino.dart';
@@ -238,11 +239,23 @@ class _HomepageState extends State<Homepage> {
                   ),
                 ],
               ),
-              child: Stack(
-                children: <Widget>[
-                  c_name_card(index),
-                  c_image_card(index),
-                ],
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => CountryPageOne(),
+                          settings: RouteSettings(
+                              arguments: country_a[index]["c_name"])));
+                },
+                child: Container(
+                  child: Stack(
+                    children: <Widget>[
+                      c_name_card(index),
+                      c_image_card(index),
+                    ],
+                  ),
+                ),
               ));
         });
   }

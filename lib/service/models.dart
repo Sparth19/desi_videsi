@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-class country_model {
+/*class country_model {
   String country;
   String company;
   String countryPic;
@@ -23,7 +23,7 @@ class country_model {
     data['Company Pic'] = this.companyPic;
     return data;
   }
-}
+}*/
 
 List<Welcome> welcomeFromJson(String str) =>
     List<Welcome>.from(json.decode(str).map((x) => Welcome.fromJson(x)));
@@ -377,6 +377,7 @@ class countrylist {
 }
 */
 
+/*
 class master_model {
   int id;
   String mainCategory;
@@ -453,3 +454,4 @@ class master_model {
     return data;
   }
 }
+*/
