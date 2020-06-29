@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:desividesi/color/MyTheme.dart';
+import 'package:desividesi/pages/Category_Page_1.dart';
 import 'package:desividesi/service/services.dart';
 import 'package:desividesi/storage/mobile_storage.dart';
 import 'package:flutter/cupertino.dart';
@@ -7,14 +8,14 @@ import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class Homepage extends StatefulWidget {
+  static List useData = new List();
+  static List useMaster = new List();
+
   @override
   _HomepageState createState() => _HomepageState();
 }
 
 class _HomepageState extends State<Homepage> {
-  List _useData = new List();
-  List _useMaster = new List();
-
   List<Map<String, String>> category_a = [
     {'mc_name': 'Automobiles', 'mc_url': 'automobiles'},
     {'mc_name': 'Baby Products', 'mc_url': 'baby_products'},
@@ -58,15 +59,23 @@ class _HomepageState extends State<Homepage> {
 
   get editingController => null;
 
+  set useMaster(useMaster) {
+    Homepage.useMaster = useMaster;
+  }
+
+  set useData(useData) {
+    Homepage.useData = useData;
+  }
+
   Future LoadData() async {
     loadCountry().then((Data) {
       setState(() {
-        _useData = Data;
+        useData = Data;
       });
     });
     loadMaster().then((Data1) {
       setState(() {
-        _useMaster = Data1;
+        useMaster = Data1;
       });
     });
   }
@@ -244,16 +253,26 @@ class _HomepageState extends State<Homepage> {
         itemCount: category_a.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (BuildContext context, int index) {
-          return Container(
-              height: 130,
-              margin: const EdgeInsets.only(right: 10.0),
-              width: MediaQuery.of(context).size.width / 3,
-              child: Stack(
-                children: <Widget>[
-                  name_card(index),
-                  image_card(index),
-                ],
-              ));
+          return InkWell(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => CategoryPageOne(),
+                      settings: RouteSettings(
+                          arguments: category_a[index]["mc_name"])));
+            },
+            child: Container(
+                height: 130,
+                margin: const EdgeInsets.only(right: 10.0),
+                width: MediaQuery.of(context).size.width / 3,
+                child: Stack(
+                  children: <Widget>[
+                    name_card(index),
+                    image_card(index),
+                  ],
+                )),
+          );
         });
   }
 
