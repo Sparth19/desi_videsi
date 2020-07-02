@@ -1,5 +1,7 @@
 import 'package:desividesi/color/MyTheme.dart';
+import 'package:desividesi/pages/Fragment.dart';
 import 'package:desividesi/pages/HomePage.dart';
+import 'package:desividesi/service/Data.dart';
 import 'package:desividesi/service/models.dart';
 import 'package:desividesi/storage/mobile_storage.dart';
 import 'package:flutter/material.dart';
@@ -12,21 +14,22 @@ class CategoryPageOne extends StatefulWidget {
 
 List x;
 List showData;
+Data data;
 
 List getCategoryData(category_name) {
   x = new List();
   showData = new List();
   List categoryData = x;
-  List<String> temp = new List();
-  for (MasterData x in Homepage.useMaster) {
-//      print(x.mainCategory);
-//      print(mainCategoryValues.map[category_name]);
-    if (x.mainCategory == mainCategoryValues.map[category_name]) {
-      print("name" + category_name);
-      categoryData.add(x);
-      if (!temp.contains(x.category1)) {
-        showData.add(x);
-        temp.add(x.category1);
+  {
+    List<String> temp = new List();
+    for (MasterData x in Homepage.useMaster) {
+      if (x.mainCategory == mainCategoryValues.map[category_name]) {
+        print("name" + category_name);
+        categoryData.add(x);
+        if (!temp.contains(x.category1)) {
+          showData.add(x);
+          temp.add(x.category1);
+        }
       }
     }
   }
@@ -37,6 +40,9 @@ List getCategoryData(category_name) {
 class _CategoryPageOneState extends State<CategoryPageOne> {
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
+    final double itemHeight = (size.height - 100) / 2;
+    final double itemWidth = size.width / 2;
     String check = ModalRoute.of(context).settings.arguments;
     x = getCategoryData(check);
     return Scaffold(
@@ -47,58 +53,57 @@ class _CategoryPageOneState extends State<CategoryPageOne> {
           ),
         ),
         body: Container(
-          child: create_Category_List(context),
+          child: create_Category_List(context, itemWidth, itemHeight),
         ));
   }
 
-  Widget create_Category_List(context) {
+  Widget create_Category_List(context, itemWidth, itemHeight) {
     return GridView.builder(
-
-      itemCount: showData.length,
       padding: EdgeInsets.only(left: 5, right: 5, top: 10, bottom: 5),
-      itemBuilder: (BuildContext context, int index) {
-        return InkWell(
-          child: Container(
-
-            padding: EdgeInsets.all(0),
-            child: Card(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15.0),
-                ),
-                elevation: 5,
-                child: Padding(
-                    padding: EdgeInsets.all(5),
-                    child: Column(
-                      children: <Widget>[
-                        Container(
-                          child: showImage("images/" +
-                              showData[index].category1Pics +
-                              ".jpg"),
-                        ),
-                        SizedBox(height: 10,),
-                        Align(
-                          alignment: Alignment.bottomCenter,
-                          child: Container(
-                           // color: MyThemeColor.secondaryColor,
-                            child: Text(
-                              showData[index].category1.toString(),
-                              style: TextStyle(
-                                  fontFamily: 'RobotoMono',
-                                  fontSize: 14,
-                                  letterSpacing: 1,
-                                  color: MyThemeColor.secondaryColor,
-                                  fontWeight: FontWeight.w600),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ))),
-          ),
-        );
-      },
+      itemCount: showData.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2
+        crossAxisCount: 2,
       ),
+      itemBuilder: (context, index) {
+        return InkWell(
+            onTap: () {
+              if (isCategoryNext(showData[index].category1)) {
+//                print("Data Flag1 " + data.flag.toString());
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => Fragment(data: data)));
+              } else {
+                data.flag = 102;
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => Fragment(data: data)));
+              }
+            },
+            child: Card(
+                child: Column(
+              children: <Widget>[
+                Container(
+                    child: showImage(
+                        "images/" + showData[index].category1Pics + ".jpg"),
+                    height: 150),
+                Container(
+                  height: 20,
+                  alignment: Alignment.bottomCenter,
+                  child: Text(
+                    showData[index].category1.toString(),
+                    style: TextStyle(
+                        fontFamily: 'RobotoMono',
+                        fontSize: 14,
+                        letterSpacing: 1,
+                        color: MyThemeColor.secondaryColor,
+                        fontWeight: FontWeight.w600),
+                  ),
+                )
+              ],
+            )));
+      },
     );
   }
 
@@ -109,9 +114,6 @@ class _CategoryPageOneState extends State<CategoryPageOne> {
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done)
           return Container(
-            height: 100,
-            width: 100,
-//            height: MediaQuery.of(context).size.height * 0.4,
             child: snapshot.data,
           );
 
@@ -137,5 +139,22 @@ class _CategoryPageOneState extends State<CategoryPageOne> {
               /*print(e.error)*/
             });
     return fm;
+  }
+
+  bool isCategoryNext(nextCategory) {
+    data = new Data();
+    data.masterDataList = x;
+    for (MasterData temp in showData) {
+      if (temp.category1 == nextCategory) {
+        data.masterData = temp;
+        if (temp.category2.isNotEmpty) {
+          data.flag = 101;
+          return true;
+        } else {
+          return false;
+        }
+      }
+    }
+    return false;
   }
 }
