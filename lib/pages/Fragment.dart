@@ -19,6 +19,7 @@ class _FragmentState extends State<Fragment> {
   Data data;
 
   _FragmentState({this.data});
+  var title = "";
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,7 @@ class _FragmentState extends State<Fragment> {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            "Parth Roy",
+            data.masterData.category1.toString(),
             style: TextStyle(letterSpacing: 2, fontWeight: FontWeight.w700),
           ),
         ),
@@ -66,7 +67,7 @@ class _FragmentState extends State<Fragment> {
                   Container(
                       child: showImage(
                           "images/" + showData[index].category2Pics + ".jpg"),
-                      height: 150),
+                      height: 130),
                   Container(
                     height: 20,
                     alignment: Alignment.bottomCenter,
@@ -87,11 +88,115 @@ class _FragmentState extends State<Fragment> {
         },
       );
     } else if (data.flag == 102) {
+      print("hello" + 102.toString());
+      //comparison
+      widget = compare_widget();
     } else {
+      //noyt useful
       widget = Container();
     }
 
     return widget;
+  }
+
+  Future<Widget> _getImage(BuildContext context, String image) async {
+    FadeInImage fm;
+    await FireStorageService.loadFromStorage(context, image)
+        .then((downloadUrl) {
+      fm = FadeInImage.memoryNetwork(
+        placeholder: kTransparentImage,
+        image: downloadUrl.toString(),
+        fit: BoxFit.fill,
+      );
+    }).catchError((e) => {
+              /*print(e.error)*/
+            });
+    return fm;
+  }
+
+  Widget compare_widget() {
+    List compare1 = new List();
+    List compare2 = new List();
+    {
+      List showData = new List();
+      for (MasterData x in data.masterDataList) {
+        if (data.masterData.category1 == x.category1) {
+          showData.add(x);
+        }
+      }
+      for (MasterData x in showData) {
+//        if (x.mainCategory == mainCategoryValues.map[category_name]) {
+        if (x.country == countryValues.map["India"]) {
+          compare1.add(x);
+        } else {
+          compare2.add(x);
+        }
+      }
+    }
+    print("Length : " + compare2.length.toString());
+    return Row(
+      children: <Widget>[
+        Container(
+          width: MediaQuery.of(context).size.width / 2,
+          child: displayList1(compare1),
+        ),
+        Container(
+          width: MediaQuery.of(context).size.width / 2,
+          child: displayList2(compare2),
+        ),
+      ],
+    );
+  }
+
+  Widget displayList1(List compare1) {
+    print("in" + compare1.length.toString());
+    return ListView.builder(
+        scrollDirection: Axis.vertical,
+        itemCount: compare1.length,
+        itemBuilder: (BuildContext context, int index) {
+          return Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Card(
+                child: Row(
+              children: <Widget>[
+                Container(
+                    height: 80,
+                    width: 80,
+                    child: showImage(
+                        "images/" + compare1[index].brandPics + ".jpg")),
+                Container(
+                  child: Column(
+                    children: <Widget>[
+                      Text(compare1[index].brandName),
+                      Text(compare1[index].category1),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            height: 20,
+                            width: 20,
+                            child: showImage(
+                                "images/" + countryPicValues.reverse[compare1[index].countryPic] + ".jpg"),
+                          ),
+                          Text(compare1[index].company)
+                        ],
+                      ),
+
+                    ],
+                  ),
+                ),
+              ],
+            )),
+          );
+        });
+  }
+
+  Widget displayList2(List compare2) {
+    return ListView.builder(
+        scrollDirection: Axis.vertical,
+        itemCount: compare2.length,
+        itemBuilder: (BuildContext context, int index) {
+          return Card(child: Text(compare2[index].brandName.toString()));
+        });
   }
 
   Widget showImage(String index) {
@@ -111,20 +216,5 @@ class _FragmentState extends State<Fragment> {
         return Container();
       },
     );
-  }
-
-  Future<Widget> _getImage(BuildContext context, String image) async {
-    FadeInImage fm;
-    await FireStorageService.loadFromStorage(context, image)
-        .then((downloadUrl) {
-      fm = FadeInImage.memoryNetwork(
-        placeholder: kTransparentImage,
-        image: downloadUrl.toString(),
-        fit: BoxFit.fill,
-      );
-    }).catchError((e) => {
-              /*print(e.error)*/
-            });
-    return fm;
   }
 }

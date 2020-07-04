@@ -87,7 +87,7 @@ class _CategoryPageOneState extends State<CategoryPageOne> {
                 Container(
                     child: showImage(
                         "images/" + showData[index].category1Pics + ".jpg"),
-                    height: 150),
+                    height: 130),
                 Container(
                   height: 20,
                   alignment: Alignment.bottomCenter,
