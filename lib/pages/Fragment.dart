@@ -19,6 +19,7 @@ class _FragmentState extends State<Fragment> {
   Data data;
 
   _FragmentState({this.data});
+
   var title = "";
 
   @override
@@ -60,7 +61,13 @@ class _FragmentState extends State<Fragment> {
         ),
         itemBuilder: (context, index) {
           return InkWell(
-            onTap: () {},
+            onTap: () {
+              data.flag = 103;
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => Fragment(data: data)));
+            },
             child: Card(
               child: Column(
                 children: <Widget>[
@@ -91,8 +98,40 @@ class _FragmentState extends State<Fragment> {
       print("hello" + 102.toString());
       //comparison
       widget = compare_widget();
-    } else {
+    } else if (data.flag == 103) {
       //noyt useful
+      List compare1 = new List();
+      List compare2 = new List();
+      {
+        List showData = new List();
+        for (MasterData x in data.masterDataList) {
+          if (data.masterData.category2 == x.category2) {
+            showData.add(x);
+          }
+        }
+        for (MasterData x in showData) {
+//        if (x.mainCategory == mainCategoryValues.map[category_name]) {
+          if (x.country == countryValues.map["India"]) {
+            compare1.add(x);
+          } else {
+            compare2.add(x);
+          }
+        }
+      }
+      print("Length : " + compare2.length.toString());
+      widget = Row(
+        children: <Widget>[
+          Container(
+            width: MediaQuery.of(context).size.width / 2,
+            child: displayList1(compare1),
+          ),
+          Container(
+            width: MediaQuery.of(context).size.width / 2,
+            child: displayList2(compare2),
+          ),
+        ],
+      );
+    } else {
       widget = Container();
     }
 
@@ -154,34 +193,86 @@ class _FragmentState extends State<Fragment> {
         scrollDirection: Axis.vertical,
         itemCount: compare1.length,
         itemBuilder: (BuildContext context, int index) {
+          var img_height = MediaQuery.of(context).size.width / 2 * (3 / 10) - 5;
+          var card_img_width =
+              MediaQuery.of(context).size.width / 2 * (3 / 10) - 5;
+          var card_text_width =
+              MediaQuery.of(context).size.width / 2 * (6 / 10) - 5;
           return Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(1.5),
             child: Card(
                 child: Row(
               children: <Widget>[
                 Container(
-                    height: 80,
-                    width: 80,
+                    color: MyThemeColor.textWhite,
+                    padding: EdgeInsets.fromLTRB(5, 10, 5, 10),
+                    width: card_img_width,
                     child: showImage(
                         "images/" + compare1[index].brandPics + ".jpg")),
-                Container(
-                  child: Column(
-                    children: <Widget>[
-                      Text(compare1[index].brandName),
-                      Text(compare1[index].category1),
-                      Row(
+                Expanded(
+                  child: ConstrainedBox(
+                    constraints:
+                        const BoxConstraints(minWidth: double.infinity),
+                    child: Container(
+                      color: MyThemeColor.greenLightColor,
+                      child: Column(
                         children: <Widget>[
                           Container(
-                            height: 20,
-                            width: 20,
-                            child: showImage(
-                                "images/" + countryPicValues.reverse[compare1[index].countryPic] + ".jpg"),
+                              padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
+                              width: card_text_width,
+                              child: SizedBox(
+                                width: double.infinity,
+                                child: Text(
+                                  compare1[index].brandName,
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w700,
+                                      fontSize: 20,
+                                      letterSpacing: 1),
+                                ),
+                              )),
+                          Container(
+                              padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
+                              width: card_text_width,
+                              child: SizedBox(
+                                  width: double.infinity,
+                                  child: Text(
+                                    compare1[index].category1,
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 16,
+                                        letterSpacing: 1),
+                                  ))),
+                          Container(
+                            padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
+                            width: card_text_width,
+                            child: Row(
+                              children: <Widget>[
+                                Container(
+                                  width: card_text_width * (1 / 5) - 5,
+                                  child: showImage("images/" +
+                                      countryPicValues
+                                          .reverse[compare1[index].countryPic] +
+                                      ".jpg"),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+                                  width: card_text_width * (4 / 5) - 5,
+                                  child: SizedBox(
+                                      width: double.infinity,
+                                      child: Text(
+                                        compare1[index].company,
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 14,
+                                            letterSpacing: 1),
+                                      )),
+                                )
+                              ],
+                            ),
                           ),
-                          Text(compare1[index].company)
                         ],
                       ),
-
-                    ],
+                    ),
                   ),
                 ),
               ],
@@ -190,12 +281,96 @@ class _FragmentState extends State<Fragment> {
         });
   }
 
-  Widget displayList2(List compare2) {
+  Widget displayList2(List compare1) {
     return ListView.builder(
         scrollDirection: Axis.vertical,
-        itemCount: compare2.length,
+        itemCount: compare1.length,
         itemBuilder: (BuildContext context, int index) {
-          return Card(child: Text(compare2[index].brandName.toString()));
+          var img_height = MediaQuery.of(context).size.width / 2 * (3 / 10) - 5;
+          var card_img_width =
+              MediaQuery.of(context).size.width / 2 * (3 / 10) - 5;
+          var card_text_width =
+              MediaQuery.of(context).size.width / 2 * (6 / 10) - 5;
+          return Padding(
+            padding: const EdgeInsets.all(1.5),
+            child: Card(
+                child: Row(
+              children: <Widget>[
+                Container(
+                    color: MyThemeColor.textWhite,
+                    padding: EdgeInsets.fromLTRB(5, 10, 5, 10),
+                    width: card_img_width,
+                    child: showImage(
+                        "images/" + compare1[index].brandPics + ".jpg")),
+                Expanded(
+                  child: ConstrainedBox(
+                    constraints:
+                        const BoxConstraints(minWidth: double.infinity),
+                    child: Container(
+                      color: MyThemeColor.redLightColor,
+                      child: Column(
+                        children: <Widget>[
+                          Container(
+                              padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
+                              width: card_text_width,
+                              child: SizedBox(
+                                width: double.infinity,
+                                child: Text(
+                                  compare1[index].brandName,
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w700,
+                                      fontSize: 20,
+                                      letterSpacing: 1),
+                                ),
+                              )),
+                          Container(
+                              padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
+                              width: card_text_width,
+                              child: SizedBox(
+                                  width: double.infinity,
+                                  child: Text(
+                                    compare1[index].category1,
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 16,
+                                        letterSpacing: 1),
+                                  ))),
+                          Container(
+                            padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
+                            width: card_text_width,
+                            child: Row(
+                              children: <Widget>[
+                                Container(
+                                  width: card_text_width * (1 / 5) - 5,
+                                  child: showImage("images/" +
+                                      countryPicValues
+                                          .reverse[compare1[index].countryPic] +
+                                      ".jpg"),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+                                  width: card_text_width * (4 / 5) - 5,
+                                  child: SizedBox(
+                                      width: double.infinity,
+                                      child: Text(
+                                        compare1[index].company,
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 14,
+                                            letterSpacing: 1),
+                                      )),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            )),
+          );
         });
   }
 
@@ -210,8 +385,7 @@ class _FragmentState extends State<Fragment> {
           );
 
         if (snapshot.connectionState == ConnectionState.waiting)
-          return Container(
-              height: 50, width: 50, child: CircularProgressIndicator());
+          return Container(child: Image.asset("assets/icon.jpg"));
 
         return Container();
       },

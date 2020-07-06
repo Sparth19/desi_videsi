@@ -278,7 +278,7 @@ class _HomepageState extends State<Homepage> {
             child: Container(
                 height: 130,
                 margin: const EdgeInsets.only(right: 10.0),
-                width: MediaQuery.of(context).size.width / 3,
+                width: MediaQuery.of(context).size.width / 3 - 10,
                 child: Stack(
                   children: <Widget>[
                     name_card(index),
@@ -403,7 +403,7 @@ class _HomepageState extends State<Homepage> {
 
         if (snapshot.connectionState == ConnectionState.waiting)
           return Container(
-              height: 50, width: 50, child: CircularProgressIndicator());
+              height: 50, width: 50, child: Image.asset("assets/icon.jpg"));
 
         return Container();
       },

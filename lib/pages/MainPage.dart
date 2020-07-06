@@ -1,17 +1,12 @@
-import 'package:desividesi/color/light_color.dart';
-import 'package:desividesi/service/models.dart';
 import 'package:desividesi/service/services.dart';
 import 'package:desividesi/storage/mobile_storage.dart';
 import 'package:flutter/cupertino.dart';
-
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 
 class MainPage extends StatefulWidget {
   @override
   _MainPageState createState() => _MainPageState();
 }
-
 
 //for(var i=0;i<10;i++)
 /*array([['Austria', 'austria_flag'],
@@ -117,58 +112,56 @@ class _MainPageState extends State<MainPage> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-       /* appBar: new AppBar(
+        /* appBar: new AppBar(
           title: new Text("Desi Videsi"),
           centerTitle: true,
           elevation: 5,
         ),*/
         body: Column(
-
-          children: <Widget>[
-            Text("Swadesi - Aatma nirbhar Bharat"),
-            Expanded(
-              child: new ListView.builder(
-                  padding: EdgeInsets.fromLTRB(8, 8, 8, 8),
-                  itemCount: category_a.length,
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (BuildContext context, int index) {
-                    return Card(
-                      elevation: 5,
-                      child: Column(
-                        children: <Widget>[
-                          Text(category_a[index]["mc_name"]),
-                          SizedBox(
-                            height: 5,
-                          ),
-                          FutureBuilder(
-                            future:
-                                _getImage(context, "images/"+category_a[index]["mc_url"]+".jpg"),
-                            builder: (context, snapshot) {
-                              if (snapshot.connectionState ==
-                                  ConnectionState.done)
-                                return Container(
-                                  height: 100,
-                                  width: 100,
-                                  child: snapshot.data,
-                                );
-
-                              if (snapshot.connectionState ==
-                                  ConnectionState.waiting)
-                                return Container(
-                                    height: 100,
-                                    width: 100,
-                                    child: CircularProgressIndicator());
-
-                              return Container();
-                            },
-                          ),
-                        ],
+      children: <Widget>[
+        Text("Swadesi - Aatma nirbhar Bharat"),
+        Expanded(
+          child: new ListView.builder(
+              padding: EdgeInsets.fromLTRB(8, 8, 8, 8),
+              itemCount: category_a.length,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (BuildContext context, int index) {
+                return Card(
+                  elevation: 5,
+                  child: Column(
+                    children: <Widget>[
+                      Text(category_a[index]["mc_name"]),
+                      SizedBox(
+                        height: 5,
                       ),
-                    );
-                  }),
-            ),
-          ],
-        ));
+                      FutureBuilder(
+                        future: _getImage(context,
+                            "images/" + category_a[index]["mc_url"] + ".jpg"),
+                        builder: (context, snapshot) {
+                          if (snapshot.connectionState == ConnectionState.done)
+                            return Container(
+                              height: 100,
+                              width: 100,
+                              child: snapshot.data,
+                            );
+
+                          if (snapshot.connectionState ==
+                              ConnectionState.waiting)
+                            return Container(
+                                height: 100,
+                                width: 100,
+                                child: Image.asset("assets/icon.jpg"));
+
+                          return Container();
+                        },
+                      ),
+                    ],
+                  ),
+                );
+              }),
+        ),
+      ],
+    ));
   }
 
   Future<Widget> _getImage(BuildContext context, String image) async {

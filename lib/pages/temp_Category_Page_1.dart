@@ -112,7 +112,7 @@ class _TempCategoryPageOneState extends State<TempCategoryPageOne> {
 
         if (snapshot.connectionState == ConnectionState.waiting)
           return Container(
-              height: 50, width: 50, child: CircularProgressIndicator());
+              height: 50, width: 50, child: Image.asset("assets/icon.jpg"));
 
         return Container();
       },
@@ -133,7 +133,6 @@ class _TempCategoryPageOneState extends State<TempCategoryPageOne> {
             });
     return fm;
   }
-
 
   _showSnackBar(BuildContext context, MasterData item) {
     final SnackBar objSnackbar = new SnackBar(

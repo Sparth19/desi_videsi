@@ -119,7 +119,7 @@ class _CategoryPageOneState extends State<CategoryPageOne> {
 
         if (snapshot.connectionState == ConnectionState.waiting)
           return Container(
-              height: 50, width: 50, child: CircularProgressIndicator());
+              height: 50, width: 50, child: Image.asset("assets/icon.jpg"));
 
         return Container();
       },

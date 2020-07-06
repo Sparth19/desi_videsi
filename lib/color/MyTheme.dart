@@ -18,4 +18,7 @@ class MyThemeColor {
   static const Color secondaryTextColor = const Color(0xff000000);
 
   static const Color textWhite = const Color(0xffffffff);
+
+  static const Color greenLightColor = const Color(0xffccffcc);
+  static const Color redLightColor = const Color(0xffffcccc);
 }
