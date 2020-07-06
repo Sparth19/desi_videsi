@@ -62,6 +62,7 @@ class _FragmentState extends State<Fragment> {
         itemBuilder: (context, index) {
           return InkWell(
             onTap: () {
+              data.masterData = showData[index];
               data.flag = 103;
               Navigator.push(
                   context,
