@@ -309,7 +309,7 @@ class _FragmentState extends State<Fragment> {
                                   compare1[index].brandName,
                                   style: TextStyle(
                                       fontWeight: FontWeight.w700,
-                                      fontSize: 20,
+                                      fontSize: 18,
                                       letterSpacing: 1),
                                 ),
                               )),
@@ -322,7 +322,7 @@ class _FragmentState extends State<Fragment> {
                                     compare1[index].category1,
                                     style: TextStyle(
                                         fontWeight: FontWeight.w500,
-                                        fontSize: 16,
+                                        fontSize: 14,
                                         letterSpacing: 1),
                                   ))),
                           Container(
@@ -346,7 +346,7 @@ class _FragmentState extends State<Fragment> {
                                         compare1[index].company,
                                         style: TextStyle(
                                             fontWeight: FontWeight.w600,
-                                            fontSize: 14,
+                                            fontSize: 12,
                                             letterSpacing: 1),
                                       )),
                                 )
