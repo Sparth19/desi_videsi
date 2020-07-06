@@ -120,17 +120,59 @@ class _FragmentState extends State<Fragment> {
         }
       }
       print("Length : " + compare2.length.toString());
-      widget = Row(
-        children: <Widget>[
-          Container(
-            width: MediaQuery.of(context).size.width / 2,
-            child: displayList1(compare1),
-          ),
-          Container(
-            width: MediaQuery.of(context).size.width / 2,
-            child: displayList2(compare2),
-          ),
-        ],
+      widget = Container(
+        child: Column(
+          children: <Widget>[
+            Row(
+              children: <Widget>[
+                Container(
+                  padding: EdgeInsets.all(12.0),
+                  color: MyThemeColor.greenLightColor,
+                  width: MediaQuery.of(context).size.width / 2,
+                  child: Text(
+                    "Indian",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: "RobotoMono",
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      letterSpacing: 2,
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(12.0),
+                  color: MyThemeColor.redLightColor,
+                  width: MediaQuery.of(context).size.width / 2,
+                  child: Text(
+                    "Foreign",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: "RobotoMono",
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      letterSpacing: 2,
+                    ),
+                  ),
+                )
+              ],
+            ),
+            Expanded(
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    width: MediaQuery.of(context).size.width / 2,
+                    child: displayList1(compare1),
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width / 2,
+                    child: displayList2(compare2),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       );
     } else {
       widget = Container();
@@ -174,15 +216,55 @@ class _FragmentState extends State<Fragment> {
       }
     }
     print("Length : " + compare2.length.toString());
-    return Row(
+    return Column(
       children: <Widget>[
-        Container(
-          width: MediaQuery.of(context).size.width / 2,
-          child: displayList1(compare1),
+        Row(
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.all(12.0),
+              color: MyThemeColor.greenLightColor,
+              width: MediaQuery.of(context).size.width / 2,
+              child: Text(
+                "Indian",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontFamily: "RobotoMono",
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  letterSpacing: 2,
+                ),
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(12.0),
+              color: MyThemeColor.redLightColor,
+              width: MediaQuery.of(context).size.width / 2,
+              child: Text(
+                "Foreign",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontFamily: "RobotoMono",
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  letterSpacing: 2,
+                ),
+              ),
+            )
+          ],
         ),
-        Container(
-          width: MediaQuery.of(context).size.width / 2,
-          child: displayList2(compare2),
+        Expanded(
+          child: Row(
+            children: <Widget>[
+              Container(
+                width: MediaQuery.of(context).size.width / 2,
+                child: displayList1(compare1),
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width / 2,
+                child: displayList2(compare2),
+              ),
+            ],
+          ),
         ),
       ],
     );
